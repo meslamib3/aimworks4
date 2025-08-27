@@ -1,0 +1,55 @@
+@prefix base: <https://w3id.org/h2kg/hydrogen-ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# ===== Classes =====
+base:Matter          a owl:Class .
+base:Property        a owl:Class .
+base:Parameter       a owl:Class .
+base:Process         a owl:Class ; rdfs:subClassOf prov:Activity .
+base:Measurement     a owl:Class ; rdfs:subClassOf base:Process .
+base:Manufacturing   a owl:Class ; rdfs:subClassOf base:Process .
+base:Instrument      a owl:Class ; rdfs:subClassOf prov:Entity .
+base:Agent           a owl:Class ; rdfs:subClassOf prov:Agent .
+base:Data            a owl:Class ; rdfs:subClassOf prov:Entity .
+base:Metadata        a owl:Class .
+base:Unit            a owl:Class .
+
+# DataPoint & enums
+base:DataPoint       a owl:Class ; rdfs:subClassOf prov:Entity .
+base:ReferenceElectrode a owl:Class .
+base:NormalizationBasis a owl:Class .
+
+# ===== Object properties =====
+base:hasProperty     a owl:ObjectProperty ; rdfs:label "hasProperty"@en .
+base:influences      a owl:ObjectProperty ; rdfs:label "influences"@en .
+base:measures        a owl:ObjectProperty ; rdfs:label "measures"@en .
+base:usesInstrument  a owl:ObjectProperty ; rdfs:label "usesInstrument"@en .
+base:hasPart         a owl:ObjectProperty ; rdfs:label "hasPart"@en .
+base:isPartOf        a owl:ObjectProperty ; rdfs:label "isPartOf"@en ; owl:inverseOf base:hasPart .
+base:hasOutputData   a owl:ObjectProperty ; rdfs:label "hasOutputData"@en ; owl:inverseOf prov:wasGeneratedBy .
+base:hasInputMaterial a owl:ObjectProperty ; rdfs:label "hasInputMaterial"@en ; rdfs:subPropertyOf prov:used .
+base:hasOutputMaterial a owl:ObjectProperty ; rdfs:label "hasOutputMaterial"@en ; owl:inverseOf prov:wasGeneratedBy .
+base:hasInputData    a owl:ObjectProperty ; rdfs:label "hasInputData"@en ; rdfs:subPropertyOf prov:used .
+base:hasParameter    a owl:ObjectProperty ; rdfs:label "hasParameter"@en .
+base:hasSubProcess   a owl:ObjectProperty ; rdfs:label "hasSubProcess"@en .
+base:isSubProcessOf  a owl:ObjectProperty ; rdfs:label "isSubProcessOf"@en ; owl:inverseOf base:hasSubProcess .
+base:hasQuantityValue a owl:ObjectProperty ; rdfs:label "hasQuantityValue"@en .
+base:referenceElectrode a owl:ObjectProperty ; rdfs:label "referenceElectrode"@en ; rdfs:range base:ReferenceElectrode .
+base:normalizedTo    a owl:ObjectProperty ; rdfs:label "normalizedTo"@en ; rdfs:range base:NormalizationBasis .
+
+# DataPoint helpers
+base:ofProperty      a owl:ObjectProperty ; rdfs:label "ofProperty"@en ; rdfs:domain base:DataPoint ; rdfs:range base:Property .
+base:fromMeasurement a owl:ObjectProperty ; rdfs:label "fromMeasurement"@en ; rdfs:domain base:DataPoint ; rdfs:range base:Measurement .
+base:atCurrentDensity a owl:ObjectProperty ; rdfs:label "atCurrentDensity"@en ; rdfs:domain base:DataPoint ; rdfs:range qudt:QuantityValue .
+
+# ===== Datatype properties =====
+base:hasName         a owl:DatatypeProperty ; rdfs:label "hasName"@en ; rdfs:range rdfs:Literal .
+base:hasIdentifier   a owl:DatatypeProperty ; rdfs:label "hasIdentifier"@en ; rdfs:range rdfs:Literal .
+
+# ===== Optional labels =====
+base:ReferenceElectrode rdfs:label "Reference Electrode"@en .
+base:NormalizationBasis rdfs:label "Normalization Basis"@en .

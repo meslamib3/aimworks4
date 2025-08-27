@@ -1,0 +1,45 @@
+{
+  "id": "CTX_GDL_Type",
+  "label": "Gas Diffusion Layer (GDL) Type",
+  "profile": "Context",
+  "why": "Records the GDL type or model used (e.g., Sigracet, Toray).",
+  "keywords": [
+    "GDL",
+    "gas diffusion layer",
+    "Sigracet",
+    "Toray",
+    "paper",
+    "cloth"
+  ],
+  "adds": {
+    "Parameter": [
+      "GDLType"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "GDLType": {
+      "unitHuman": "unitless"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

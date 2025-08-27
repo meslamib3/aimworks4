@@ -1,0 +1,56 @@
+{
+  "id": "CTX_Electrolyte_H3PO4",
+  "label": "Electrolyte: H₃PO₄",
+  "profile": "Context",
+  "why": "Phosphoric acid electrolyte; defaults to 0.5 M at 25 °C.",
+  "keywords": [
+    "H3PO4",
+    "phosphoric acid",
+    "acidic",
+    "0.5 M",
+    "electrolyte"
+  ],
+  "adds": {
+    "Parameter": [
+      "ElectrolyteType",
+      "ElectrolyteConcentration",
+      "Temperature"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "ElectrolyteType": {
+      "unitHuman": "unitless"
+    },
+    "ElectrolyteConcentration": {
+      "quantityKind": "AmountOfSubstanceConcentration",
+      "unitHuman": "M",
+      "numericValue": 0.5
+    },
+    "Temperature": {
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C",
+      "numericValue": 25
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

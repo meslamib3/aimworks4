@@ -1,0 +1,68 @@
+{
+  "mA/cm2": "MilliA-PER-CentiM2",
+  "mA cm-2": "MilliA-PER-CentiM2",
+  "mA cm^-2": "MilliA-PER-CentiM2",
+  "A/cm2": "A-PER-CentiM2",
+  "A/m2": "A-PER-M2",
+  "A/g": "A-PER-GM",
+
+  "m2/g": "M2-PER-GM",
+  "cm2": "CentiM2",
+
+  "mg/cm2": "MilliGM-PER-CentiM2",
+  "g/cm2": "GM-PER-CentiM2",
+
+  "V": "V",
+  "mV": "MilliV",
+  "kV": "KiloV",
+
+  "A": "A",
+  "mA": "MilliA",
+  "uA": "MicroA",
+
+  "ohm": "OHM",
+  "O": "OHM",
+
+  "Hz": "HZ",
+  "kHz": "KiloHZ",
+  "MHz": "MegaHZ",
+
+  "rpm": "REV-PER-MIN",
+
+  "K": "K",
+  "°C": "DEG_C",
+  "degC": "DEG_C",
+  "Celsius": "DEG_C",
+
+  "Pa": "PA",
+  "kPa": "KiloPA",
+  "bar": "BAR",
+
+  "s": "SEC",
+  "sec": "SEC",
+  "min": "MIN",
+  "h": "HR",
+  "hr": "HR",
+
+  "M": "MOL-PER-L",
+  "mol/L": "MOL-PER-L",
+  "mol m-3": "MOL-PER-M3",
+  "mol/m3": "MOL-PER-M3",
+
+  "%": "PERCENT",
+  "unitless": "UNITLESS",
+  "dimensionless": "UNITLESS",
+
+  "F": "FARAD",
+  "mF": "MilliFARAD",
+  "uF": "MicroFARAD",
+
+  "W": "W",
+  "mW": "MilliW",
+  "kW": "KiloW",
+
+  "Wh/kg": "W-HR-PER-KiloGM",
+  "Wh/L": "W-HR-PER-L",
+  "mAh/g": "MilliA-HR-PER-GM",
+  "mAh/cm2": "MilliA-HR-PER-CentiM2"
+}

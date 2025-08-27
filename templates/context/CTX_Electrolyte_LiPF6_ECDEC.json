@@ -1,0 +1,59 @@
+{
+  "id": "CTX_Electrolyte_LiPF6_ECDEC",
+  "label": "Battery Electrolyte: LiPF₆ in EC/DEC",
+  "profile": "Context",
+  "why": "Common Li-ion electrolyte; defaults to 1.0 M LiPF₆ in EC/DEC (1:1).",
+  "keywords": [
+    "LiPF6",
+    "EC/DEC",
+    "battery electrolyte",
+    "1.0 M"
+  ],
+  "adds": {
+    "Parameter": [
+      "ElectrolyteType",
+      "ElectrolyteConcentration",
+      "SolventSystem",
+      "Temperature"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "ElectrolyteType": {
+      "unitHuman": "unitless"
+    },
+    "ElectrolyteConcentration": {
+      "quantityKind": "AmountOfSubstanceConcentration",
+      "unitHuman": "M",
+      "numericValue": 1.0
+    },
+    "SolventSystem": {
+      "unitHuman": "unitless"
+    },
+    "Temperature": {
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C",
+      "numericValue": 25
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

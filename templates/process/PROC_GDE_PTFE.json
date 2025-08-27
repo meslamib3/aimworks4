@@ -1,0 +1,119 @@
+{
+  "id": "PROC_GDE_PTFE",
+  "label": "GDE Fabrication (PTFE treatment)",
+  "profile": "Manufacturing",
+  "adds": {
+    "Manufacturing": [
+      "GDE_PTFE_Treatment"
+    ],
+    "Parameter": [
+      "BakeTemperature",
+      "BakeTime",
+      "PTFEFraction"
+    ],
+    "Instrument": [
+      "Oven"
+    ],
+    "Matter": [
+      "GasDiffusionLayer",
+      "PTFESolution",
+      "PTFE_TreatedGDL"
+    ]
+  },
+  "relationships": [
+    [
+      "GDE_PTFE_Treatment",
+      "hasParameter",
+      "PTFEFraction"
+    ],
+    [
+      "GDE_PTFE_Treatment",
+      "hasParameter",
+      "BakeTemperature"
+    ],
+    [
+      "GDE_PTFE_Treatment",
+      "hasParameter",
+      "BakeTime"
+    ],
+    [
+      "GDE_PTFE_Treatment",
+      "usesInstrument",
+      "Oven"
+    ],
+    [
+      "GDE_PTFE_Treatment",
+      "hasInputMaterial",
+      "GasDiffusionLayer"
+    ],
+    [
+      "GDE_PTFE_Treatment",
+      "hasInputMaterial",
+      "PTFESolution"
+    ],
+    [
+      "GDE_PTFE_Treatment",
+      "hasOutputMaterial",
+      "PTFE_TreatedGDL"
+    ]
+  ],
+  "curated_values": {
+    "PTFEFraction": {
+      "numericValue": null,
+      "quantityKind": "Dimensionless",
+      "unitHuman": "%"
+    },
+    "BakeTemperature": {
+      "numericValue": null,
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C"
+    },
+    "BakeTime": {
+      "numericValue": null,
+      "quantityKind": "Time",
+      "unitHuman": "min"
+    }
+  },
+  "units_map": {
+    "°C": "DEG_C",
+    "C": "DEG_C",
+    "K": "K",
+    "s": "SEC",
+    "sec": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "hr": "HR",
+    "Pa": "PA",
+    "kPa": "KiloPA",
+    "bar": "BAR",
+    "mbar": "MilliBAR",
+    "Torr": "TORR",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLM": "L-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "L/min": "L-PER-MIN",
+    "nm/min": "NanoM-PER-MIN",
+    "W": "W",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mm/s": "MilliM-PER-SEC",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "mm": "MilliM",
+    "cm": "CentiM",
+    "nm": "NanoM",
+    "V": "V",
+    "mV": "MilliV",
+    "A": "A",
+    "mA": "MilliA",
+    "M": "MOL-PER-L",
+    "wt%": "PERCENT",
+    "%": "PERCENT",
+    "ppm": "PPM",
+    "N": "N",
+    "N·m": "N-M",
+    "N*m": "N-M",
+    "mg/cm2": "MilliGM-PER-CentiM2"
+  },
+  "shapes_files": []
+}

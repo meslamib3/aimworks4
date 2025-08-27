@@ -1,0 +1,147 @@
+{
+  "id": "PROC_EC_Activation",
+  "label": "Electrochemical Activation (CV cycles)",
+  "profile": "Manufacturing",
+  "adds": {
+    "Manufacturing": [
+      "ECActivation"
+    ],
+    "Parameter": [
+      "ElectrolyteConcentration",
+      "ElectrolyteType",
+      "NumberOfCycles",
+      "PotentialWindow",
+      "ScanRate",
+      "Temperature"
+    ],
+    "Instrument": [
+      "Potentiostat"
+    ],
+    "Matter": [
+      "ActivatedElectrode",
+      "CoatedElectrode",
+      "Electrolyte"
+    ]
+  },
+  "relationships": [
+    [
+      "ECActivation",
+      "hasParameter",
+      "NumberOfCycles"
+    ],
+    [
+      "ECActivation",
+      "hasParameter",
+      "ScanRate"
+    ],
+    [
+      "ECActivation",
+      "hasParameter",
+      "PotentialWindow"
+    ],
+    [
+      "ECActivation",
+      "hasParameter",
+      "ElectrolyteType"
+    ],
+    [
+      "ECActivation",
+      "hasParameter",
+      "ElectrolyteConcentration"
+    ],
+    [
+      "ECActivation",
+      "hasParameter",
+      "Temperature"
+    ],
+    [
+      "ECActivation",
+      "usesInstrument",
+      "Potentiostat"
+    ],
+    [
+      "ECActivation",
+      "hasInputMaterial",
+      "Electrolyte"
+    ],
+    [
+      "ECActivation",
+      "hasInputMaterial",
+      "CoatedElectrode"
+    ],
+    [
+      "ECActivation",
+      "hasOutputMaterial",
+      "ActivatedElectrode"
+    ]
+  ],
+  "curated_values": {
+    "NumberOfCycles": {
+      "numericValue": null,
+      "quantityKind": "Dimensionless",
+      "unitHuman": "unitless"
+    },
+    "ScanRate": {
+      "numericValue": null,
+      "quantityKind": "Frequency",
+      "unitHuman": "mV"
+    },
+    "PotentialWindow": {
+      "numericValue": null,
+      "quantityKind": "ElectricPotential",
+      "unitHuman": "V"
+    },
+    "ElectrolyteConcentration": {
+      "numericValue": null,
+      "quantityKind": "AmountOfSubstanceConcentration",
+      "unitHuman": "M"
+    },
+    "Temperature": {
+      "numericValue": null,
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C"
+    }
+  },
+  "units_map": {
+    "°C": "DEG_C",
+    "C": "DEG_C",
+    "K": "K",
+    "s": "SEC",
+    "sec": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "hr": "HR",
+    "Pa": "PA",
+    "kPa": "KiloPA",
+    "bar": "BAR",
+    "mbar": "MilliBAR",
+    "Torr": "TORR",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLM": "L-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "L/min": "L-PER-MIN",
+    "nm/min": "NanoM-PER-MIN",
+    "W": "W",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mm/s": "MilliM-PER-SEC",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "mm": "MilliM",
+    "cm": "CentiM",
+    "nm": "NanoM",
+    "V": "V",
+    "mV": "MilliV",
+    "A": "A",
+    "mA": "MilliA",
+    "M": "MOL-PER-L",
+    "wt%": "PERCENT",
+    "%": "PERCENT",
+    "ppm": "PPM",
+    "N": "N",
+    "N·m": "N-M",
+    "N*m": "N-M",
+    "mg/cm2": "MilliGM-PER-CentiM2"
+  },
+  "shapes_files": []
+}

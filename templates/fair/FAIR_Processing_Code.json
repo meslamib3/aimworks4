@@ -1,0 +1,27 @@
+{
+  "id": "FAIR_Processing_Code",
+  "label": "Data Processing & Code Repo",
+  "profile": "FAIR",
+  "adds": {
+    "Data": [
+      "ExperimentDataset",
+      "ProcessingCodeRepo",
+      "ProcessingWorkflow"
+    ]
+  },
+  "relationships": [
+    [
+      "ProcessingCodeRepo",
+      "isPartOf",
+      "ExperimentDataset"
+    ],
+    [
+      "ProcessingWorkflow",
+      "isPartOf",
+      "ExperimentDataset"
+    ]
+  ],
+  "curated_values": {},
+  "units_map": {},
+  "shapes_embed": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix qudt: <http://qudt.org/schema/qudt/> .\n@prefix unit: <http://qudt.org/vocab/unit/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix base: <https://w3id.org/h2kg/hydrogen-ontology#> .\n    \n    base:Shape_Processing a sh:NodeShape ;\n      sh:targetNode base:ExperimentDataset ;\n      sh:property [ sh:path dcterms:source ; sh:minCount 0 ; sh:severity sh:Info ] ;\n      sh:property [ sh:path dcterms:requires ; sh:minCount 0 ; sh:severity sh:Info ] .\n\n    base:Shape_ProcessingRepo a sh:NodeShape ;\n      sh:targetNode base:ProcessingCodeRepo ;\n      sh:property [ sh:path base:isPartOf ; sh:hasValue base:ExperimentDataset ; sh:minCount 1 ] .\n\n    base:Shape_ProcessingWorkflow a sh:NodeShape ;\n      sh:targetNode base:ProcessingWorkflow ;\n      sh:property [ sh:path base:isPartOf ; sh:hasValue base:ExperimentDataset ; sh:minCount 1 ] .\n    "
+}

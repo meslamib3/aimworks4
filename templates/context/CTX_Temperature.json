@@ -1,0 +1,45 @@
+{
+  "id": "CTX_Temperature",
+  "label": "Temperature",
+  "profile": "Context",
+  "why": "Sets operating temperature for the experiment.",
+  "keywords": [
+    "temperature",
+    "temp",
+    "thermostat",
+    "bath"
+  ],
+  "adds": {
+    "Parameter": [
+      "Temperature"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "Temperature": {
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C",
+      "numericValue": 25
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

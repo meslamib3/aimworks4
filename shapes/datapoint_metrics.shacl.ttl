@@ -1,0 +1,62 @@
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix base: <https://w3id.org/h2kg/hydrogen-ontology#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# DataPoint must carry at least a property and a value
+base:DataPointCore a sh:NodeShape ;
+  sh:targetClass base:DataPoint ;
+  sh:property [
+    sh:path base:ofProperty ;
+    sh:minCount 1 ;
+    sh:message "DataPoint must declare base:ofProperty (e.g., Overpotential)." ;
+  ] ;
+  sh:property [
+    sh:path base:hasQuantityValue ;
+    sh:minCount 1 ;
+    sh:message "DataPoint must carry a qudt:QuantityValue (value and unit)." ;
+  ] .
+
+# QuantityValue under DataPoint should have unit; numeric is recommended
+base:DataPointQV a sh:NodeShape ;
+  sh:targetObjectsOf base:hasQuantityValue ;
+  sh:property [
+    sh:path qudt:unit ;
+    sh:minCount 1 ;
+    sh:message "QuantityValue should have qudt:unit." ;
+  ] ;
+  sh:property [
+    sh:path qudt:numericValue ;
+    sh:datatype xsd:double ;
+    sh:severity sh:Warning ;
+    sh:message "QuantityValue numericValue is RECOMMENDED." ;
+  ] .
+
+# If a DataPoint uses base:atCurrentDensity, then that QV must have unit and numeric
+base:AtCurrentDensityShape a sh:NodeShape ;
+  sh:targetObjectsOf base:atCurrentDensity ;
+  sh:property [
+    sh:path qudt:unit ; sh:minCount 1 ;
+    sh:message "atCurrentDensity must have a unit (e.g., mA/cm2)." ;
+  ] ;
+  sh:property [
+    sh:path qudt:numericValue ; sh:datatype xsd:double ;
+    sh:message "atCurrentDensity should have numeric value." ;
+    sh:severity sh:Warning ;
+  ] .
+
+# Optional guidance: referenceElectrode and normalizedTo on DataPoint
+base:DataPointEnums a sh:NodeShape ;
+  sh:targetClass base:DataPoint ;
+  sh:property [
+    sh:path base:referenceElectrode ;
+    sh:in ( base:RHE base:SHE base:AgAgCl ) ;
+    sh:severity sh:Warning ;
+    sh:message "referenceElectrode should be one of RHE / SHE / AgAgCl."
+  ] ;
+  sh:property [
+    sh:path base:normalizedTo ;
+    sh:in ( base:GeometricArea base:CatalystMass ) ;
+    sh:severity sh:Warning ;
+    sh:message "normalizedTo should be GeometricArea or CatalystMass."
+  ] .

@@ -1,0 +1,11 @@
+@prefix base: <https://w3id.org/h2kg/hydrogen-ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Reference electrodes
+base:RHE    a base:ReferenceElectrode ; rdfs:label "RHE"@en .
+base:SHE    a base:ReferenceElectrode ; rdfs:label "SHE"@en .
+base:AgAgCl a base:ReferenceElectrode ; rdfs:label "Ag/AgCl"@en .
+
+# Normalization bases
+base:GeometricArea a base:NormalizationBasis ; rdfs:label "Geometric Area"@en .
+base:CatalystMass a base:NormalizationBasis ; rdfs:label "Catalyst Mass"@en .

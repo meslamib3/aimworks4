@@ -1,0 +1,43 @@
+{
+  "id": "CTX_Electrolyte_Concentration",
+  "label": "Electrolyte Concentration",
+  "profile": "Context",
+  "why": "Allows explicit setting of electrolyte molarity independent of electrolyte type.",
+  "keywords": [
+    "concentration",
+    "molarity",
+    "M"
+  ],
+  "adds": {
+    "Parameter": [
+      "ElectrolyteConcentration"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "ElectrolyteConcentration": {
+      "quantityKind": "AmountOfSubstanceConcentration",
+      "unitHuman": "M"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

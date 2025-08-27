@@ -1,0 +1,154 @@
+{
+  "id": "PROC_Assembly_MEA",
+  "label": "MEA Assembly",
+  "profile": "Manufacturing",
+  "adds": {
+    "Manufacturing": [
+      "MEAAssemblyProcess"
+    ],
+    "Parameter": [
+      "AssemblyTorque",
+      "CatalystLoading",
+      "CompressionPercent",
+      "GasketThickness",
+      "MembraneType"
+    ],
+    "Instrument": [
+      "HotPress",
+      "TorqueWrench"
+    ],
+    "Matter": [
+      "AnodeGDE",
+      "CathodeGDE",
+      "Gasket",
+      "MEAAssembly",
+      "ProtonatedMembrane"
+    ]
+  },
+  "relationships": [
+    [
+      "MEAAssemblyProcess",
+      "hasParameter",
+      "MembraneType"
+    ],
+    [
+      "MEAAssemblyProcess",
+      "hasParameter",
+      "CatalystLoading"
+    ],
+    [
+      "MEAAssemblyProcess",
+      "hasParameter",
+      "GasketThickness"
+    ],
+    [
+      "MEAAssemblyProcess",
+      "hasParameter",
+      "CompressionPercent"
+    ],
+    [
+      "MEAAssemblyProcess",
+      "hasParameter",
+      "AssemblyTorque"
+    ],
+    [
+      "MEAAssemblyProcess",
+      "usesInstrument",
+      "TorqueWrench"
+    ],
+    [
+      "MEAAssemblyProcess",
+      "usesInstrument",
+      "HotPress"
+    ],
+    [
+      "MEAAssemblyProcess",
+      "hasInputMaterial",
+      "ProtonatedMembrane"
+    ],
+    [
+      "MEAAssemblyProcess",
+      "hasInputMaterial",
+      "AnodeGDE"
+    ],
+    [
+      "MEAAssemblyProcess",
+      "hasInputMaterial",
+      "CathodeGDE"
+    ],
+    [
+      "MEAAssemblyProcess",
+      "hasInputMaterial",
+      "Gasket"
+    ],
+    [
+      "MEAAssemblyProcess",
+      "hasOutputMaterial",
+      "MEAAssembly"
+    ]
+  ],
+  "curated_values": {
+    "CatalystLoading": {
+      "numericValue": null,
+      "quantityKind": "MassPerArea",
+      "unitHuman": "mg/cm2"
+    },
+    "GasketThickness": {
+      "numericValue": null,
+      "quantityKind": "Length",
+      "unitHuman": "um"
+    },
+    "CompressionPercent": {
+      "numericValue": null,
+      "quantityKind": "Dimensionless",
+      "unitHuman": "%"
+    },
+    "AssemblyTorque": {
+      "numericValue": null,
+      "quantityKind": "Torque",
+      "unitHuman": "N·m"
+    }
+  },
+  "units_map": {
+    "°C": "DEG_C",
+    "C": "DEG_C",
+    "K": "K",
+    "s": "SEC",
+    "sec": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "hr": "HR",
+    "Pa": "PA",
+    "kPa": "KiloPA",
+    "bar": "BAR",
+    "mbar": "MilliBAR",
+    "Torr": "TORR",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLM": "L-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "L/min": "L-PER-MIN",
+    "nm/min": "NanoM-PER-MIN",
+    "W": "W",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mm/s": "MilliM-PER-SEC",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "mm": "MilliM",
+    "cm": "CentiM",
+    "nm": "NanoM",
+    "V": "V",
+    "mV": "MilliV",
+    "A": "A",
+    "mA": "MilliA",
+    "M": "MOL-PER-L",
+    "wt%": "PERCENT",
+    "%": "PERCENT",
+    "ppm": "PPM",
+    "N": "N",
+    "N·m": "N-M",
+    "N*m": "N-M",
+    "mg/cm2": "MilliGM-PER-CentiM2"
+  },
+  "shapes_files": []
+}

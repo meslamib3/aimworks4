@@ -1,0 +1,132 @@
+{
+  "id": "PROC_Assembly_FlowCell",
+  "label": "Flow Cell Assembly",
+  "profile": "Manufacturing",
+  "adds": {
+    "Manufacturing": [
+      "FlowCellAssembly"
+    ],
+    "Parameter": [
+      "AssemblyTorque",
+      "GDLType",
+      "GasketThickness",
+      "SealingMethod"
+    ],
+    "Instrument": [
+      "TorqueWrench"
+    ],
+    "Matter": [
+      "FlowCellAssemblyUnit",
+      "FlowFieldPlate",
+      "GDL",
+      "Gasket",
+      "MEAAssembly"
+    ]
+  },
+  "relationships": [
+    [
+      "FlowCellAssembly",
+      "hasParameter",
+      "GDLType"
+    ],
+    [
+      "FlowCellAssembly",
+      "hasParameter",
+      "GasketThickness"
+    ],
+    [
+      "FlowCellAssembly",
+      "hasParameter",
+      "AssemblyTorque"
+    ],
+    [
+      "FlowCellAssembly",
+      "hasParameter",
+      "SealingMethod"
+    ],
+    [
+      "FlowCellAssembly",
+      "usesInstrument",
+      "TorqueWrench"
+    ],
+    [
+      "FlowCellAssembly",
+      "hasInputMaterial",
+      "FlowFieldPlate"
+    ],
+    [
+      "FlowCellAssembly",
+      "hasInputMaterial",
+      "GDL"
+    ],
+    [
+      "FlowCellAssembly",
+      "hasInputMaterial",
+      "Gasket"
+    ],
+    [
+      "FlowCellAssembly",
+      "hasInputMaterial",
+      "MEAAssembly"
+    ],
+    [
+      "FlowCellAssembly",
+      "hasOutputMaterial",
+      "FlowCellAssemblyUnit"
+    ]
+  ],
+  "curated_values": {
+    "GasketThickness": {
+      "numericValue": null,
+      "quantityKind": "Length",
+      "unitHuman": "um"
+    },
+    "AssemblyTorque": {
+      "numericValue": null,
+      "quantityKind": "Torque",
+      "unitHuman": "N·m"
+    }
+  },
+  "units_map": {
+    "°C": "DEG_C",
+    "C": "DEG_C",
+    "K": "K",
+    "s": "SEC",
+    "sec": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "hr": "HR",
+    "Pa": "PA",
+    "kPa": "KiloPA",
+    "bar": "BAR",
+    "mbar": "MilliBAR",
+    "Torr": "TORR",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLM": "L-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "L/min": "L-PER-MIN",
+    "nm/min": "NanoM-PER-MIN",
+    "W": "W",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mm/s": "MilliM-PER-SEC",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "mm": "MilliM",
+    "cm": "CentiM",
+    "nm": "NanoM",
+    "V": "V",
+    "mV": "MilliV",
+    "A": "A",
+    "mA": "MilliA",
+    "M": "MOL-PER-L",
+    "wt%": "PERCENT",
+    "%": "PERCENT",
+    "ppm": "PPM",
+    "N": "N",
+    "N·m": "N-M",
+    "N*m": "N-M",
+    "mg/cm2": "MilliGM-PER-CentiM2"
+  },
+  "shapes_files": []
+}

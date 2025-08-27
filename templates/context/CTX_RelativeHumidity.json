@@ -1,0 +1,44 @@
+{
+  "id": "CTX_RelativeHumidity",
+  "label": "Relative Humidity",
+  "profile": "Context",
+  "why": "Sets RH for gas streams or environmental chambers.",
+  "keywords": [
+    "humidity",
+    "RH",
+    "relative humidity",
+    "humidifier"
+  ],
+  "adds": {
+    "Parameter": [
+      "RelativeHumidity"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "RelativeHumidity": {
+      "quantityKind": "Dimensionless",
+      "unitHuman": "%"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

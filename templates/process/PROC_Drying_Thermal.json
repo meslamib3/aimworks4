@@ -1,0 +1,113 @@
+{
+  "id": "PROC_Drying_Thermal",
+  "label": "Thermal Drying",
+  "profile": "Manufacturing",
+  "adds": {
+    "Manufacturing": [
+      "ThermalDrying"
+    ],
+    "Parameter": [
+      "AtmosphereGas",
+      "DryingTemperature",
+      "DryingTime"
+    ],
+    "Instrument": [
+      "HotPlate",
+      "Oven"
+    ],
+    "Matter": [
+      "CoatedElectrode"
+    ]
+  },
+  "relationships": [
+    [
+      "ThermalDrying",
+      "hasParameter",
+      "DryingTemperature"
+    ],
+    [
+      "ThermalDrying",
+      "hasParameter",
+      "DryingTime"
+    ],
+    [
+      "ThermalDrying",
+      "hasParameter",
+      "AtmosphereGas"
+    ],
+    [
+      "ThermalDrying",
+      "usesInstrument",
+      "Oven"
+    ],
+    [
+      "ThermalDrying",
+      "usesInstrument",
+      "HotPlate"
+    ],
+    [
+      "ThermalDrying",
+      "hasInputMaterial",
+      "CoatedElectrode"
+    ],
+    [
+      "ThermalDrying",
+      "hasOutputMaterial",
+      "CoatedElectrode"
+    ]
+  ],
+  "curated_values": {
+    "DryingTemperature": {
+      "numericValue": null,
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C"
+    },
+    "DryingTime": {
+      "numericValue": null,
+      "quantityKind": "Time",
+      "unitHuman": "min"
+    }
+  },
+  "units_map": {
+    "°C": "DEG_C",
+    "C": "DEG_C",
+    "K": "K",
+    "s": "SEC",
+    "sec": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "hr": "HR",
+    "Pa": "PA",
+    "kPa": "KiloPA",
+    "bar": "BAR",
+    "mbar": "MilliBAR",
+    "Torr": "TORR",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLM": "L-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "L/min": "L-PER-MIN",
+    "nm/min": "NanoM-PER-MIN",
+    "W": "W",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mm/s": "MilliM-PER-SEC",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "mm": "MilliM",
+    "cm": "CentiM",
+    "nm": "NanoM",
+    "V": "V",
+    "mV": "MilliV",
+    "A": "A",
+    "mA": "MilliA",
+    "M": "MOL-PER-L",
+    "wt%": "PERCENT",
+    "%": "PERCENT",
+    "ppm": "PPM",
+    "N": "N",
+    "N·m": "N-M",
+    "N*m": "N-M",
+    "mg/cm2": "MilliGM-PER-CentiM2"
+  },
+  "shapes_files": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "METR_ORR_SpecificActivity_0p9",
+  "label": "ORR Specific Activity @ 0.9 V",
+  "profile": "Metric",
+  "why": "ORR activity normalized by area proxy at 0.9 V_RHE (edit normalization if using true ECSA).",
+  "keywords": [
+    "ORR",
+    "specific activity",
+    "0.9 V_RHE"
+  ],
+  "adds": {
+    "Property": [
+      "ORRSpecificActivity"
+    ],
+    "Parameter": [
+      "ReferenceScale",
+      "Voltage"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "ORRSpecificActivity": {
+      "quantityKind": "ElectricCurrentDensity",
+      "unitHuman": "mA/cm2",
+      "normalizationBasis": "GeometricArea"
+    }
+  },
+  "units_map": {
+    "mV": "MilliV",
+    "V": "V",
+    "A": "AMP",
+    "mA": "MilliA",
+    "ohm": "OHM",
+    "Hz": "HZ",
+    "mA/cm2": "MilliA-PER-CentiM2",
+    "A/cm2": "A-PER-CentiM2",
+    "A/g": "A-PER-GM",
+    "mA/g": "MilliA-PER-GM",
+    "F/g": "FARAD-PER-GM",
+    "F/cm2": "FARAD-PER-CentiM2",
+    "F/cm3": "FARAD-PER-CentiM3",
+    "Wh/kg": "W-HR-PER-KiloGM",
+    "Wh/L": "W-HR-PER-L",
+    "W/kg": "W-PER-KiloGM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mAh/g": "MilliA-HR-PER-GM",
+    "mAh/cm2": "MilliA-HR-PER-CentiM2",
+    "cm2/s": "CentiM2-PER-SEC",
+    "rpm": "REV-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "s": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "hr": "HR",
+    "day": "DAY",
+    "°C": "DEG_C",
+    "K": "K",
+    "umol/h": "MicroMOL-PER-HR",
+    "nmol/s": "NanoMOL-PER-SEC",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "1/s": "PER-SEC"
+  },
+  "shapes_files": [],
+  "datapoints": [
+    {
+      "ofProperty": "ORRSpecificActivity",
+      "value": {
+        "quantityKind": "ElectricCurrentDensity",
+        "unitHuman": "mA/cm2"
+      },
+      "normalizedTo": "GeometricArea",
+      "conditions": {
+        "atPotential": {
+          "quantityKind": "ElectricPotential",
+          "unitHuman": "V",
+          "numericValue": 0.9,
+          "referenceScale": "RHE"
+        }
+      }
+    }
+  ]
+}

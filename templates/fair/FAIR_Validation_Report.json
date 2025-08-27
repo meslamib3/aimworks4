@@ -1,0 +1,21 @@
+{
+  "id": "FAIR_Validation_Report",
+  "label": "Validation Report (SHACL/QA)",
+  "profile": "FAIR",
+  "adds": {
+    "Data": [
+      "ExperimentDataset",
+      "ValidationReport"
+    ]
+  },
+  "relationships": [
+    [
+      "ValidationReport",
+      "isPartOf",
+      "ExperimentDataset"
+    ]
+  ],
+  "curated_values": {},
+  "units_map": {},
+  "shapes_embed": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix qudt: <http://qudt.org/schema/qudt/> .\n@prefix unit: <http://qudt.org/vocab/unit/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix base: <https://w3id.org/h2kg/hydrogen-ontology#> .\n    \n    base:Shape_ValidationReport a sh:NodeShape ;\n      sh:targetNode base:ValidationReport ;\n      sh:property [ sh:path base:isPartOf ; sh:hasValue base:ExperimentDataset ; sh:minCount 1 ] ;\n      sh:property [ sh:path dcterms:description ; sh:minCount 0 ; sh:severity sh:Info ] ;\n      sh:property [ sh:path dcterms:date ; sh:minCount 0 ; sh:severity sh:Info ] .\n    "
+}

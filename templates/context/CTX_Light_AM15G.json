@@ -1,0 +1,50 @@
+{
+  "id": "CTX_Light_AM15G",
+  "label": "Light Source & Intensity (AM1.5G)",
+  "profile": "Context",
+  "why": "Sets simulated solar illumination and intensity for PEC tests.",
+  "keywords": [
+    "light",
+    "AM1.5G",
+    "solar simulator",
+    "100 mW/cm2",
+    "PEC"
+  ],
+  "adds": {
+    "Parameter": [
+      "LightSource",
+      "LightIntensity"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "LightSource": {
+      "unitHuman": "unitless"
+    },
+    "LightIntensity": {
+      "quantityKind": "PowerPerArea",
+      "unitHuman": "mW/cm2",
+      "numericValue": 100
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

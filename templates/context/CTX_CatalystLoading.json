@@ -1,0 +1,44 @@
+{
+  "id": "CTX_CatalystLoading",
+  "label": "Catalyst Loading (mg cm⁻²)",
+  "profile": "Context",
+  "why": "Sets catalyst loading for electrodes or MEAs.",
+  "keywords": [
+    "loading",
+    "catalyst loading",
+    "mg/cm2",
+    "mass per area"
+  ],
+  "adds": {
+    "Parameter": [
+      "CatalystLoading"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "CatalystLoading": {
+      "quantityKind": "MassPerArea",
+      "unitHuman": "mg/cm2"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

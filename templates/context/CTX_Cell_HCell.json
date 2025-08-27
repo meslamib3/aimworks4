@@ -1,0 +1,46 @@
+{
+  "id": "CTX_Cell_HCell",
+  "label": "Cell: H‑Cell",
+  "profile": "Context",
+  "why": "Two-compartment H-cell configuration (ion exchange between compartments).",
+  "keywords": [
+    "H-cell",
+    "two-compartment",
+    "separator"
+  ],
+  "adds": {
+    "Parameter": [
+      "CellConfiguration",
+      "SeparatorType"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "CellConfiguration": {
+      "unitHuman": "unitless"
+    },
+    "SeparatorType": {
+      "unitHuman": "unitless"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

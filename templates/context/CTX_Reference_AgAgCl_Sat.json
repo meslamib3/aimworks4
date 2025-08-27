@@ -1,0 +1,43 @@
+{
+  "id": "CTX_Reference_AgAgCl_Sat",
+  "label": "Reference: Ag/AgCl (sat. KCl)",
+  "profile": "Context",
+  "why": "Sets Ag/AgCl (saturated KCl) as the reference electrode scale.",
+  "keywords": [
+    "Ag/AgCl",
+    "sat. KCl",
+    "reference electrode"
+  ],
+  "adds": {
+    "Parameter": [
+      "ReferenceScale"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "ReferenceScale": {
+      "unitHuman": "unitless",
+      "referenceScale": "AgAgCl"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

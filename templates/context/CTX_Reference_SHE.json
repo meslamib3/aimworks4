@@ -1,0 +1,43 @@
+{
+  "id": "CTX_Reference_SHE",
+  "label": "Reference: SHE",
+  "profile": "Context",
+  "why": "Sets SHE as the reference electrode scale for potentials.",
+  "keywords": [
+    "SHE",
+    "reference electrode",
+    "standard hydrogen electrode"
+  ],
+  "adds": {
+    "Parameter": [
+      "ReferenceScale"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "ReferenceScale": {
+      "unitHuman": "unitless",
+      "referenceScale": "SHE"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

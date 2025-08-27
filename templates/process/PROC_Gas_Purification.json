@@ -1,0 +1,125 @@
+{
+  "id": "PROC_Gas_Purification",
+  "label": "Gas Purification / Deoxygenation",
+  "profile": "Manufacturing",
+  "adds": {
+    "Manufacturing": [
+      "GasPurification"
+    ],
+    "Parameter": [
+      "FlowRate",
+      "OxygenThreshold",
+      "PurgeGas",
+      "PurgeTime"
+    ],
+    "Instrument": [
+      "GasPurifier",
+      "MassFlowController"
+    ],
+    "Matter": [
+      "GasStream",
+      "PurifiedGasStream"
+    ]
+  },
+  "relationships": [
+    [
+      "GasPurification",
+      "hasParameter",
+      "PurgeGas"
+    ],
+    [
+      "GasPurification",
+      "hasParameter",
+      "FlowRate"
+    ],
+    [
+      "GasPurification",
+      "hasParameter",
+      "PurgeTime"
+    ],
+    [
+      "GasPurification",
+      "hasParameter",
+      "OxygenThreshold"
+    ],
+    [
+      "GasPurification",
+      "usesInstrument",
+      "MassFlowController"
+    ],
+    [
+      "GasPurification",
+      "usesInstrument",
+      "GasPurifier"
+    ],
+    [
+      "GasPurification",
+      "hasInputMaterial",
+      "GasStream"
+    ],
+    [
+      "GasPurification",
+      "hasOutputMaterial",
+      "PurifiedGasStream"
+    ]
+  ],
+  "curated_values": {
+    "FlowRate": {
+      "numericValue": null,
+      "quantityKind": "VolumeFlowRate",
+      "unitHuman": "sccm"
+    },
+    "PurgeTime": {
+      "numericValue": null,
+      "quantityKind": "Time",
+      "unitHuman": "min"
+    },
+    "OxygenThreshold": {
+      "numericValue": null,
+      "quantityKind": "Dimensionless",
+      "unitHuman": "ppm"
+    }
+  },
+  "units_map": {
+    "°C": "DEG_C",
+    "C": "DEG_C",
+    "K": "K",
+    "s": "SEC",
+    "sec": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "hr": "HR",
+    "Pa": "PA",
+    "kPa": "KiloPA",
+    "bar": "BAR",
+    "mbar": "MilliBAR",
+    "Torr": "TORR",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLM": "L-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "L/min": "L-PER-MIN",
+    "nm/min": "NanoM-PER-MIN",
+    "W": "W",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mm/s": "MilliM-PER-SEC",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "mm": "MilliM",
+    "cm": "CentiM",
+    "nm": "NanoM",
+    "V": "V",
+    "mV": "MilliV",
+    "A": "A",
+    "mA": "MilliA",
+    "M": "MOL-PER-L",
+    "wt%": "PERCENT",
+    "%": "PERCENT",
+    "ppm": "PPM",
+    "N": "N",
+    "N·m": "N-M",
+    "N*m": "N-M",
+    "mg/cm2": "MilliGM-PER-CentiM2"
+  },
+  "shapes_files": []
+}

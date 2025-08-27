@@ -1,0 +1,73 @@
+{
+  "id": "FAIR_Environment_Log",
+  "label": "Environment Log (T/P/RH/gas)",
+  "profile": "FAIR",
+  "adds": {
+    "Data": [
+      "ExperimentDataset",
+      "EnvironmentLog"
+    ],
+    "Parameter": [
+      "Temperature",
+      "Pressure",
+      "RelativeHumidity",
+      "GasFlowRate"
+    ]
+  },
+  "relationships": [
+    [
+      "EnvironmentLog",
+      "isPartOf",
+      "ExperimentDataset"
+    ],
+    [
+      "EnvironmentLog",
+      "hasParameter",
+      "Temperature"
+    ],
+    [
+      "EnvironmentLog",
+      "hasParameter",
+      "Pressure"
+    ],
+    [
+      "EnvironmentLog",
+      "hasParameter",
+      "RelativeHumidity"
+    ],
+    [
+      "EnvironmentLog",
+      "hasParameter",
+      "GasFlowRate"
+    ]
+  ],
+  "curated_values": {
+    "Temperature": {
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C",
+      "numericValue": null
+    },
+    "Pressure": {
+      "quantityKind": "Pressure",
+      "unitHuman": "bar",
+      "numericValue": null
+    },
+    "RelativeHumidity": {
+      "quantityKind": "Dimensionless",
+      "unitHuman": "%",
+      "numericValue": null
+    },
+    "GasFlowRate": {
+      "quantityKind": "VolumePerTime",
+      "unitHuman": "sccm",
+      "numericValue": null
+    }
+  },
+  "units_map": {
+    "°C": "DEG_C",
+    "%": "PERCENT",
+    "bar": "BAR",
+    "sccm": "CentiM3-PER-MIN"
+  },
+  "shapes_embed": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix qudt: <http://qudt.org/schema/qudt/> .\n@prefix unit: <http://qudt.org/vocab/unit/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix base: <https://w3id.org/h2kg/hydrogen-ontology#> .\n    \n    base:Shape_EnvironmentLog a sh:NodeShape ;\n      sh:targetNode base:EnvironmentLog ;\n      sh:property [ sh:path base:isPartOf ; sh:hasValue base:ExperimentDataset ; sh:minCount 1 ] ;\n      sh:property [ sh:path base:hasParameter ; sh:minCount 1 ; sh:severity sh:Warning ] .\n\n    # Soft expectations (warnings) that a few key parameters are present\n    base:Shape_EnvParam_T a sh:NodeShape ;\n      sh:targetNode base:EnvironmentLog ;\n      sh:property [ sh:path base:hasParameter ; sh:hasValue base:Temperature ; sh:minCount 1 ; sh:severity sh:Warning ] .\n\n    base:Shape_EnvParam_P a sh:NodeShape ;\n      sh:targetNode base:EnvironmentLog ;\n      sh:property [ sh:path base:hasParameter ; sh:hasValue base:Pressure ; sh:minCount 1 ; sh:severity sh:Warning ] .\n\n    base:Shape_EnvParam_RH a sh:NodeShape ;\n      sh:targetNode base:EnvironmentLog ;\n      sh:property [ sh:path base:hasParameter ; sh:hasValue base:RelativeHumidity ; sh:minCount 1 ; sh:severity sh:Warning ] .\n\n    base:Shape_EnvParam_Flow a sh:NodeShape ;\n      sh:targetNode base:EnvironmentLog ;\n      sh:property [ sh:path base:hasParameter ; sh:hasValue base:GasFlowRate ; sh:minCount 1 ; sh:severity sh:Warning ] .\n    "
+}

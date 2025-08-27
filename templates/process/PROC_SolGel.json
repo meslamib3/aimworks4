@@ -1,0 +1,142 @@
+{
+  "id": "PROC_SolGel",
+  "label": "Sol–Gel Synthesis",
+  "profile": "Manufacturing",
+  "adds": {
+    "Manufacturing": [
+      "SolGelSynthesis"
+    ],
+    "Parameter": [
+      "AgingTime",
+      "CalcinationTemperature",
+      "CalcinationTime",
+      "GelationTime",
+      "PrecursorType",
+      "SolventType"
+    ],
+    "Instrument": [
+      "Oven",
+      "TubeFurnace"
+    ],
+    "Matter": [
+      "OxidePowder",
+      "PrecursorSolution"
+    ]
+  },
+  "relationships": [
+    [
+      "SolGelSynthesis",
+      "hasParameter",
+      "PrecursorType"
+    ],
+    [
+      "SolGelSynthesis",
+      "hasParameter",
+      "SolventType"
+    ],
+    [
+      "SolGelSynthesis",
+      "hasParameter",
+      "AgingTime"
+    ],
+    [
+      "SolGelSynthesis",
+      "hasParameter",
+      "GelationTime"
+    ],
+    [
+      "SolGelSynthesis",
+      "hasParameter",
+      "CalcinationTemperature"
+    ],
+    [
+      "SolGelSynthesis",
+      "hasParameter",
+      "CalcinationTime"
+    ],
+    [
+      "SolGelSynthesis",
+      "usesInstrument",
+      "Oven"
+    ],
+    [
+      "SolGelSynthesis",
+      "usesInstrument",
+      "TubeFurnace"
+    ],
+    [
+      "SolGelSynthesis",
+      "hasInputMaterial",
+      "PrecursorSolution"
+    ],
+    [
+      "SolGelSynthesis",
+      "hasOutputMaterial",
+      "OxidePowder"
+    ]
+  ],
+  "curated_values": {
+    "AgingTime": {
+      "numericValue": null,
+      "quantityKind": "Time",
+      "unitHuman": "h"
+    },
+    "GelationTime": {
+      "numericValue": null,
+      "quantityKind": "Time",
+      "unitHuman": "h"
+    },
+    "CalcinationTemperature": {
+      "numericValue": null,
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C"
+    },
+    "CalcinationTime": {
+      "numericValue": null,
+      "quantityKind": "Time",
+      "unitHuman": "h"
+    }
+  },
+  "units_map": {
+    "°C": "DEG_C",
+    "C": "DEG_C",
+    "K": "K",
+    "s": "SEC",
+    "sec": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "hr": "HR",
+    "Pa": "PA",
+    "kPa": "KiloPA",
+    "bar": "BAR",
+    "mbar": "MilliBAR",
+    "Torr": "TORR",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLM": "L-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "L/min": "L-PER-MIN",
+    "nm/min": "NanoM-PER-MIN",
+    "W": "W",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mm/s": "MilliM-PER-SEC",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "mm": "MilliM",
+    "cm": "CentiM",
+    "nm": "NanoM",
+    "V": "V",
+    "mV": "MilliV",
+    "A": "A",
+    "mA": "MilliA",
+    "M": "MOL-PER-L",
+    "wt%": "PERCENT",
+    "%": "PERCENT",
+    "ppm": "PPM",
+    "N": "N",
+    "N·m": "N-M",
+    "N*m": "N-M",
+    "mg/cm2": "MilliGM-PER-CentiM2"
+  },
+  "shapes_files": []
+}

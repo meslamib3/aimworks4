@@ -1,0 +1,43 @@
+{
+  "id": "CTX_Luggin",
+  "label": "Luggin Capillary (distance)",
+  "profile": "Context",
+  "why": "Sets the Luggin capillary tip distance to the electrode surface.",
+  "keywords": [
+    "Luggin",
+    "capillary",
+    "distance"
+  ],
+  "adds": {
+    "Parameter": [
+      "LugginCapillaryDistance"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "LugginCapillaryDistance": {
+      "quantityKind": "Length",
+      "unitHuman": "mm"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

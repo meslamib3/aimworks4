@@ -1,0 +1,46 @@
+{
+  "id": "CTX_Cell_FlowCell",
+  "label": "Cell: Flow Cell (GDE)",
+  "profile": "Context",
+  "why": "Gas diffusion electrode flow cell configuration with controlled gas/liquid flows.",
+  "keywords": [
+    "flow cell",
+    "GDE",
+    "gas diffusion electrode"
+  ],
+  "adds": {
+    "Parameter": [
+      "CellConfiguration",
+      "GDLType"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "CellConfiguration": {
+      "unitHuman": "unitless"
+    },
+    "GDLType": {
+      "unitHuman": "unitless"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

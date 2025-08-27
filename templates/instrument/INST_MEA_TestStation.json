@@ -1,0 +1,92 @@
+{
+  "id": "INST_MEA_TestStation",
+  "label": "MEA Test Station",
+  "profile": "Instrument",
+  "why": "Complete fuel cell/electrolyzer test station with gas handling, humidification, and control.",
+  "keywords": [
+    "MEA",
+    "test station",
+    "fuel cell bench",
+    "electrolyzer bench"
+  ],
+  "adds": {
+    "Instrument": [
+      "MEATestStation"
+    ],
+    "Parameter": [
+      "CellArea",
+      "AnodeFlowRate",
+      "CathodeFlowRate",
+      "AnodeRelativeHumidity",
+      "CathodeRelativeHumidity"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "CellArea": {
+      "quantityKind": "Area",
+      "unitHuman": "cm2"
+    },
+    "AnodeFlowRate": {
+      "quantityKind": "VolumeFlowRate",
+      "unitHuman": "sccm"
+    },
+    "CathodeFlowRate": {
+      "quantityKind": "VolumeFlowRate",
+      "unitHuman": "sccm"
+    },
+    "AnodeRelativeHumidity": {
+      "quantityKind": "Dimensionless",
+      "unitHuman": "%"
+    },
+    "CathodeRelativeHumidity": {
+      "quantityKind": "Dimensionless",
+      "unitHuman": "%"
+    }
+  },
+  "units_map": {
+    "mV": "MilliV",
+    "V": "V",
+    "A": "AMP",
+    "mA": "MilliA",
+    "ohm": "OHM",
+    "Hz": "HZ",
+    "kHz": "KiloHZ",
+    "MHz": "MegaHZ",
+    "s": "SEC",
+    "ms": "MilliSEC",
+    "min": "MIN",
+    "h": "HR",
+    "°C": "DEG_C",
+    "degC": "DEG_C",
+    "K": "K",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLPM": "L-PER-MIN",
+    "cm3/min": "CentiM3-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "uL/min": "MicroL-PER-MIN",
+    "µL/min": "MicroL-PER-MIN",
+    "bar": "BAR",
+    "kPa": "KiloPA",
+    "psi": "PSI",
+    "nm": "NanoM",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "cm2": "CentiM2",
+    "cm^-1": "PER-CentiM",
+    "cm-1": "PER-CentiM",
+    "Angstrom": "ANGSTROM",
+    "eV": "EV",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "W/m2": "W-PER-M2",
+    "ppm": "PPM",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "deg": "DEG",
+    "deg/min": "DEG-PER-MIN",
+    "nm/min": "NanoM-PER-MIN"
+  },
+  "shapes_files": [],
+  "datapoints": []
+}

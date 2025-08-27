@@ -1,0 +1,82 @@
+{
+  "id": "INST_FTIR",
+  "label": "FTIR / SEIRAS",
+  "profile": "Instrument",
+  "why": "Infrared spectroscopy (including surface-enhanced) for adsorbates and intermediates.",
+  "keywords": [
+    "FTIR",
+    "SEIRAS",
+    "infrared",
+    "IR"
+  ],
+  "adds": {
+    "Instrument": [
+      "FTIR_SEIRAS"
+    ],
+    "Parameter": [
+      "SpectralResolution",
+      "ScanCount",
+      "IncidenceAngle"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "SpectralResolution": {
+      "quantityKind": "WaveNumber",
+      "unitHuman": "cm^-1"
+    },
+    "ScanCount": {
+      "quantityKind": "Dimensionless",
+      "unitHuman": "unitless"
+    },
+    "IncidenceAngle": {
+      "quantityKind": "Angle",
+      "unitHuman": "deg"
+    }
+  },
+  "units_map": {
+    "mV": "MilliV",
+    "V": "V",
+    "A": "AMP",
+    "mA": "MilliA",
+    "ohm": "OHM",
+    "Hz": "HZ",
+    "kHz": "KiloHZ",
+    "MHz": "MegaHZ",
+    "s": "SEC",
+    "ms": "MilliSEC",
+    "min": "MIN",
+    "h": "HR",
+    "°C": "DEG_C",
+    "degC": "DEG_C",
+    "K": "K",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLPM": "L-PER-MIN",
+    "cm3/min": "CentiM3-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "uL/min": "MicroL-PER-MIN",
+    "µL/min": "MicroL-PER-MIN",
+    "bar": "BAR",
+    "kPa": "KiloPA",
+    "psi": "PSI",
+    "nm": "NanoM",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "cm2": "CentiM2",
+    "cm^-1": "PER-CentiM",
+    "cm-1": "PER-CentiM",
+    "Angstrom": "ANGSTROM",
+    "eV": "EV",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "W/m2": "W-PER-M2",
+    "ppm": "PPM",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "deg": "DEG",
+    "deg/min": "DEG-PER-MIN",
+    "nm/min": "NanoM-PER-MIN"
+  },
+  "shapes_files": [],
+  "datapoints": []
+}

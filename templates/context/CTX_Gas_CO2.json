@@ -1,0 +1,43 @@
+{
+  "id": "CTX_Gas_CO2",
+  "label": "Gas: CO₂ Saturation",
+  "profile": "Context",
+  "why": "Saturates electrolyte with CO₂ (e.g., for CO₂RR).",
+  "keywords": [
+    "carbon dioxide",
+    "CO2",
+    "saturated",
+    "bubbled"
+  ],
+  "adds": {
+    "Parameter": [
+      "SaturatingGas"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "SaturatingGas": {
+      "unitHuman": "unitless"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

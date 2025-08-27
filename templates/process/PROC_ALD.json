@@ -1,0 +1,136 @@
+{
+  "id": "PROC_ALD",
+  "label": "ALD Coating",
+  "profile": "Manufacturing",
+  "adds": {
+    "Manufacturing": [
+      "ALDCoating"
+    ],
+    "Parameter": [
+      "ALDCycles",
+      "ALDTemperature",
+      "Precursors",
+      "PulseTime",
+      "PurgeTime"
+    ],
+    "Instrument": [
+      "ALDTool"
+    ],
+    "Matter": [
+      "ALDPrecursors",
+      "CoatedSubstrate",
+      "Substrate"
+    ]
+  },
+  "relationships": [
+    [
+      "ALDCoating",
+      "hasParameter",
+      "ALDCycles"
+    ],
+    [
+      "ALDCoating",
+      "hasParameter",
+      "ALDTemperature"
+    ],
+    [
+      "ALDCoating",
+      "hasParameter",
+      "PulseTime"
+    ],
+    [
+      "ALDCoating",
+      "hasParameter",
+      "PurgeTime"
+    ],
+    [
+      "ALDCoating",
+      "hasParameter",
+      "Precursors"
+    ],
+    [
+      "ALDCoating",
+      "usesInstrument",
+      "ALDTool"
+    ],
+    [
+      "ALDCoating",
+      "hasInputMaterial",
+      "Substrate"
+    ],
+    [
+      "ALDCoating",
+      "hasInputMaterial",
+      "ALDPrecursors"
+    ],
+    [
+      "ALDCoating",
+      "hasOutputMaterial",
+      "CoatedSubstrate"
+    ]
+  ],
+  "curated_values": {
+    "ALDCycles": {
+      "numericValue": null,
+      "quantityKind": "Dimensionless",
+      "unitHuman": "unitless"
+    },
+    "ALDTemperature": {
+      "numericValue": null,
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C"
+    },
+    "PulseTime": {
+      "numericValue": null,
+      "quantityKind": "Time",
+      "unitHuman": "s"
+    },
+    "PurgeTime": {
+      "numericValue": null,
+      "quantityKind": "Time",
+      "unitHuman": "s"
+    }
+  },
+  "units_map": {
+    "°C": "DEG_C",
+    "C": "DEG_C",
+    "K": "K",
+    "s": "SEC",
+    "sec": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "hr": "HR",
+    "Pa": "PA",
+    "kPa": "KiloPA",
+    "bar": "BAR",
+    "mbar": "MilliBAR",
+    "Torr": "TORR",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLM": "L-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "L/min": "L-PER-MIN",
+    "nm/min": "NanoM-PER-MIN",
+    "W": "W",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mm/s": "MilliM-PER-SEC",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "mm": "MilliM",
+    "cm": "CentiM",
+    "nm": "NanoM",
+    "V": "V",
+    "mV": "MilliV",
+    "A": "A",
+    "mA": "MilliA",
+    "M": "MOL-PER-L",
+    "wt%": "PERCENT",
+    "%": "PERCENT",
+    "ppm": "PPM",
+    "N": "N",
+    "N·m": "N-M",
+    "N*m": "N-M",
+    "mg/cm2": "MilliGM-PER-CentiM2"
+  },
+  "shapes_files": []
+}

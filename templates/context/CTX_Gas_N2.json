@@ -1,0 +1,43 @@
+{
+  "id": "CTX_Gas_N2",
+  "label": "Gas: N₂ Purge",
+  "profile": "Context",
+  "why": "Sets an inert N₂ purge environment.",
+  "keywords": [
+    "nitrogen",
+    "N2",
+    "purge",
+    "inert"
+  ],
+  "adds": {
+    "Parameter": [
+      "PurgeGas"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "PurgeGas": {
+      "unitHuman": "unitless"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

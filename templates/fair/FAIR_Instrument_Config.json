@@ -1,0 +1,29 @@
+{
+  "id": "FAIR_Instrument_Config",
+  "label": "Instrument Configuration Snapshot",
+  "profile": "FAIR",
+  "adds": {
+    "Data": [
+      "ExperimentDataset",
+      "InstrumentConfiguration"
+    ],
+    "Instrument": [
+      "ElectrochemicalWorkstation"
+    ]
+  },
+  "relationships": [
+    [
+      "InstrumentConfiguration",
+      "isPartOf",
+      "ExperimentDataset"
+    ],
+    [
+      "InstrumentConfiguration",
+      "hasPart",
+      "ElectrochemicalWorkstation"
+    ]
+  ],
+  "curated_values": {},
+  "units_map": {},
+  "shapes_embed": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix qudt: <http://qudt.org/schema/qudt/> .\n@prefix unit: <http://qudt.org/vocab/unit/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix base: <https://w3id.org/h2kg/hydrogen-ontology#> .\n    \n    base:Shape_InstrumentConfig a sh:NodeShape ;\n      sh:targetNode base:InstrumentConfiguration ;\n      sh:property [ sh:path base:isPartOf ; sh:hasValue base:ExperimentDataset ; sh:minCount 1 ] ;\n      sh:property [ sh:path base:hasPart ; sh:minCount 1 ; sh:severity sh:Warning ] .\n    "
+}

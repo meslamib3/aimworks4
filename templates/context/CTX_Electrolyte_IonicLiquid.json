@@ -1,0 +1,44 @@
+{
+  "id": "CTX_Electrolyte_IonicLiquid",
+  "label": "Ionic Liquid Electrolyte",
+  "profile": "Context",
+  "why": "Selects an ionic liquid environment (neat or mixed).",
+  "keywords": [
+    "ionic liquid",
+    "IL",
+    "EMIM",
+    "BMIM",
+    "electrolyte"
+  ],
+  "adds": {
+    "Parameter": [
+      "ElectrolyteType"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "ElectrolyteType": {
+      "unitHuman": "unitless"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

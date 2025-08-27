@@ -1,0 +1,43 @@
+{
+  "id": "CTX_Gas_H2",
+  "label": "Gas: H₂ Feed",
+  "profile": "Context",
+  "why": "Sets a hydrogen feed environment (e.g., PEMFC anode or HER reference).",
+  "keywords": [
+    "hydrogen",
+    "H2",
+    "feed",
+    "humidification"
+  ],
+  "adds": {
+    "Parameter": [
+      "FeedGas"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "FeedGas": {
+      "unitHuman": "unitless"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

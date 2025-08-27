@@ -1,0 +1,147 @@
+{
+  "id": "PROC_CVD",
+  "label": "CVD Growth",
+  "profile": "Manufacturing",
+  "adds": {
+    "Manufacturing": [
+      "CVDGrowth"
+    ],
+    "Parameter": [
+      "CVDPressure",
+      "CVDTemperature",
+      "CVDTime",
+      "CarrierGasFlow",
+      "PrecursorFlow"
+    ],
+    "Instrument": [
+      "CVDReactor",
+      "MassFlowController"
+    ],
+    "Matter": [
+      "CoatedSubstrate",
+      "PrecursorGas",
+      "Substrate"
+    ]
+  },
+  "relationships": [
+    [
+      "CVDGrowth",
+      "hasParameter",
+      "CVDTemperature"
+    ],
+    [
+      "CVDGrowth",
+      "hasParameter",
+      "CVDPressure"
+    ],
+    [
+      "CVDGrowth",
+      "hasParameter",
+      "CVDTime"
+    ],
+    [
+      "CVDGrowth",
+      "hasParameter",
+      "CarrierGasFlow"
+    ],
+    [
+      "CVDGrowth",
+      "hasParameter",
+      "PrecursorFlow"
+    ],
+    [
+      "CVDGrowth",
+      "usesInstrument",
+      "CVDReactor"
+    ],
+    [
+      "CVDGrowth",
+      "usesInstrument",
+      "MassFlowController"
+    ],
+    [
+      "CVDGrowth",
+      "hasInputMaterial",
+      "PrecursorGas"
+    ],
+    [
+      "CVDGrowth",
+      "hasInputMaterial",
+      "Substrate"
+    ],
+    [
+      "CVDGrowth",
+      "hasOutputMaterial",
+      "CoatedSubstrate"
+    ]
+  ],
+  "curated_values": {
+    "CVDTemperature": {
+      "numericValue": null,
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C"
+    },
+    "CVDPressure": {
+      "numericValue": null,
+      "quantityKind": "Pressure",
+      "unitHuman": "Torr"
+    },
+    "CVDTime": {
+      "numericValue": null,
+      "quantityKind": "Time",
+      "unitHuman": "min"
+    },
+    "CarrierGasFlow": {
+      "numericValue": null,
+      "quantityKind": "VolumeFlowRate",
+      "unitHuman": "sccm"
+    },
+    "PrecursorFlow": {
+      "numericValue": null,
+      "quantityKind": "VolumeFlowRate",
+      "unitHuman": "sccm"
+    }
+  },
+  "units_map": {
+    "°C": "DEG_C",
+    "C": "DEG_C",
+    "K": "K",
+    "s": "SEC",
+    "sec": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "hr": "HR",
+    "Pa": "PA",
+    "kPa": "KiloPA",
+    "bar": "BAR",
+    "mbar": "MilliBAR",
+    "Torr": "TORR",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLM": "L-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "L/min": "L-PER-MIN",
+    "nm/min": "NanoM-PER-MIN",
+    "W": "W",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mm/s": "MilliM-PER-SEC",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "mm": "MilliM",
+    "cm": "CentiM",
+    "nm": "NanoM",
+    "V": "V",
+    "mV": "MilliV",
+    "A": "A",
+    "mA": "MilliA",
+    "M": "MOL-PER-L",
+    "wt%": "PERCENT",
+    "%": "PERCENT",
+    "ppm": "PPM",
+    "N": "N",
+    "N·m": "N-M",
+    "N*m": "N-M",
+    "mg/cm2": "MilliGM-PER-CentiM2"
+  },
+  "shapes_files": []
+}

@@ -1,0 +1,136 @@
+{
+  "id": "PROC_Anneal_Reducing",
+  "label": "Annealing in Reducing Gas (H₂/Ar)",
+  "profile": "Manufacturing",
+  "adds": {
+    "Manufacturing": [
+      "AnnealingReducing"
+    ],
+    "Parameter": [
+      "AnnealTemperature",
+      "AnnealTime",
+      "AtmosphereGas",
+      "FlowRate",
+      "RampRate"
+    ],
+    "Instrument": [
+      "MassFlowController",
+      "TubeFurnace"
+    ],
+    "Matter": [
+      "AnnealedElectrode",
+      "CoatedElectrode"
+    ]
+  },
+  "relationships": [
+    [
+      "AnnealingReducing",
+      "hasParameter",
+      "AnnealTemperature"
+    ],
+    [
+      "AnnealingReducing",
+      "hasParameter",
+      "AnnealTime"
+    ],
+    [
+      "AnnealingReducing",
+      "hasParameter",
+      "RampRate"
+    ],
+    [
+      "AnnealingReducing",
+      "hasParameter",
+      "AtmosphereGas"
+    ],
+    [
+      "AnnealingReducing",
+      "hasParameter",
+      "FlowRate"
+    ],
+    [
+      "AnnealingReducing",
+      "usesInstrument",
+      "TubeFurnace"
+    ],
+    [
+      "AnnealingReducing",
+      "usesInstrument",
+      "MassFlowController"
+    ],
+    [
+      "AnnealingReducing",
+      "hasInputMaterial",
+      "CoatedElectrode"
+    ],
+    [
+      "AnnealingReducing",
+      "hasOutputMaterial",
+      "AnnealedElectrode"
+    ]
+  ],
+  "curated_values": {
+    "AnnealTemperature": {
+      "numericValue": null,
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C"
+    },
+    "AnnealTime": {
+      "numericValue": null,
+      "quantityKind": "Time",
+      "unitHuman": "h"
+    },
+    "RampRate": {
+      "numericValue": null,
+      "quantityKind": "TemperaturePerTime",
+      "unitHuman": "°C"
+    },
+    "FlowRate": {
+      "numericValue": null,
+      "quantityKind": "VolumeFlowRate",
+      "unitHuman": "sccm"
+    }
+  },
+  "units_map": {
+    "°C": "DEG_C",
+    "C": "DEG_C",
+    "K": "K",
+    "s": "SEC",
+    "sec": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "hr": "HR",
+    "Pa": "PA",
+    "kPa": "KiloPA",
+    "bar": "BAR",
+    "mbar": "MilliBAR",
+    "Torr": "TORR",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLM": "L-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "L/min": "L-PER-MIN",
+    "nm/min": "NanoM-PER-MIN",
+    "W": "W",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mm/s": "MilliM-PER-SEC",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "mm": "MilliM",
+    "cm": "CentiM",
+    "nm": "NanoM",
+    "V": "V",
+    "mV": "MilliV",
+    "A": "A",
+    "mA": "MilliA",
+    "M": "MOL-PER-L",
+    "wt%": "PERCENT",
+    "%": "PERCENT",
+    "ppm": "PPM",
+    "N": "N",
+    "N·m": "N-M",
+    "N*m": "N-M",
+    "mg/cm2": "MilliGM-PER-CentiM2"
+  },
+  "shapes_files": []
+}

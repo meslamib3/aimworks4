@@ -1,0 +1,40 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix base: <https://w3id.org/h2kg/hydrogen-ontology#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+# Role constraints for base:measures
+base:MeasuresSubjectShape a sh:NodeShape ;
+  sh:targetSubjectsOf base:measures ;
+  sh:class base:Measurement ;
+  sh:message "Subject of base:measures must be a Measurement." .
+
+base:MeasuresObjectShape a sh:NodeShape ;
+  sh:targetObjectsOf base:measures ;
+  sh:class base:Property ;
+  sh:message "Object of base:measures must be a Property." .
+
+# Role constraints for base:hasProperty (Matter->Property)
+base:HasPropertySubjectShape a sh:NodeShape ;
+  sh:targetSubjectsOf base:hasProperty ;
+  sh:class base:Matter ;
+  sh:message "Subject of base:hasProperty must be Matter." .
+
+base:HasPropertyObjectShape a sh:NodeShape ;
+  sh:targetObjectsOf base:hasProperty ;
+  sh:class base:Property ;
+  sh:message "Object of base:hasProperty must be Property." .
+
+# Measurement core requirements
+base:MeasurementCore a sh:NodeShape ;
+  sh:targetClass base:Measurement ;
+  sh:property [ sh:path base:usesInstrument ; sh:minCount 1 ; sh:class base:Instrument ] ;
+  sh:property [ sh:path base:hasParameter   ; sh:minCount 1 ; sh:class base:Parameter ] ;
+  sh:property [ sh:path base:measures       ; sh:minCount 1 ; sh:class base:Property ] .
+
+# FAIR minima for Data
+base:DataFAIRShape a sh:NodeShape ;
+  sh:targetClass base:Data ;
+  sh:property [ sh:path dcterms:title ; sh:minCount 1 ] ;
+  sh:property [ sh:path dcat:downloadURL ; sh:minCount 1 ] ;
+  sh:property [ sh:path dcterms:license ; sh:minCount 1 ] .

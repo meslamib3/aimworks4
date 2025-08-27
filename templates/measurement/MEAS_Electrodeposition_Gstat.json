@@ -1,0 +1,159 @@
+{
+  "id": "MEAS_Electrodeposition_Gstat",
+  "label": "Electrodeposition (galvanostatic)",
+  "profile": "Deposition",
+  "why": "Measurement template for Electrodeposition (galvanostatic).",
+  "keywords": [
+    "Electrodeposition",
+    "Galvanostatic",
+    "Thickness",
+    "Efficiency"
+  ],
+  "adds": {
+    "Measurement": [
+      "ElectrodepositionGalvanostatic"
+    ],
+    "Property": [
+      "DepositedMass",
+      "Thickness",
+      "CurrentEfficiency"
+    ],
+    "Parameter": [
+      "HoldCurrent",
+      "Duration",
+      "ElectrolyteType",
+      "ElectrolyteConcentration",
+      "Temperature"
+    ],
+    "Instrument": [
+      "ElectrochemicalWorkstation"
+    ],
+    "Data": [
+      "ExperimentDataset"
+    ]
+  },
+  "relationships": [
+    [
+      "ElectrodepositionGalvanostatic",
+      "usesInstrument",
+      "ElectrochemicalWorkstation"
+    ],
+    [
+      "ElectrodepositionGalvanostatic",
+      "hasParameter",
+      "HoldCurrent"
+    ],
+    [
+      "ElectrodepositionGalvanostatic",
+      "hasParameter",
+      "Duration"
+    ],
+    [
+      "ElectrodepositionGalvanostatic",
+      "hasParameter",
+      "ElectrolyteType"
+    ],
+    [
+      "ElectrodepositionGalvanostatic",
+      "hasParameter",
+      "ElectrolyteConcentration"
+    ],
+    [
+      "ElectrodepositionGalvanostatic",
+      "hasParameter",
+      "Temperature"
+    ],
+    [
+      "ElectrodepositionGalvanostatic",
+      "measures",
+      "DepositedMass"
+    ],
+    [
+      "ElectrodepositionGalvanostatic",
+      "measures",
+      "Thickness"
+    ],
+    [
+      "ElectrodepositionGalvanostatic",
+      "measures",
+      "CurrentEfficiency"
+    ],
+    [
+      "ElectrodepositionGalvanostatic",
+      "hasOutputData",
+      "ExperimentDataset"
+    ]
+  ],
+  "curated_values": {
+    "HoldCurrent": {
+      "quantityKind": "ElectricCurrent",
+      "unitHuman": "mA"
+    },
+    "Duration": {
+      "quantityKind": "Time",
+      "unitHuman": "s"
+    },
+    "DepositedMass": {
+      "quantityKind": "Mass",
+      "unitHuman": "mg"
+    },
+    "Thickness": {
+      "quantityKind": "Length",
+      "unitHuman": "um"
+    },
+    "CurrentEfficiency": {
+      "quantityKind": "Dimensionless",
+      "unitHuman": "%"
+    },
+    "ElectrolyteType": {
+      "unitHuman": "unitless"
+    },
+    "ElectrolyteConcentration": {
+      "quantityKind": "AmountOfSubstanceConcentration",
+      "unitHuman": "M"
+    },
+    "Temperature": {
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C"
+    }
+  },
+  "units_map": {
+    "mA/cm2": "MilliA-PER-CentiM2",
+    "A/cm2": "A-PER-CentiM2",
+    "mV": "MilliV",
+    "V": "V",
+    "°C": "DEG_C",
+    "K": "K",
+    "%": "PERCENT",
+    "ohm": "OHM",
+    "Hz": "HZ",
+    "kHz": "KiloHZ",
+    "rpm": "REV-PER-MIN",
+    "s": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "M": "MOL-PER-L",
+    "mV/s": "MilliV-PER-SEC",
+    "V/s": "V-PER-SEC",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "A": "A",
+    "mA": "MilliA",
+    "uA": "MicroA",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "W/cm2": "W-PER-CentiM2",
+    "F/g": "FARAD-PER-GM",
+    "F/cm2": "FARAD-PER-CentiM2",
+    "Wh/kg": "W-HR-PER-KiloGM",
+    "W/kg": "W-PER-KiloGM",
+    "mAh/g": "MilliA-HR-PER-GM",
+    "mAh/cm2": "MilliA-HR-PER-CentiM2",
+    "unitless": "UNITLESS",
+    "1/cm3": "PER-CentiM3",
+    "mS/cm": "MilliS-PER-CentiM",
+    "mL/min": "MilliL-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "mg": "MilliGM",
+    "um": "MicroM"
+  },
+  "shapes_files": []
+}

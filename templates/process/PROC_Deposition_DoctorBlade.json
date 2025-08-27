@@ -1,0 +1,136 @@
+{
+  "id": "PROC_Deposition_DoctorBlade",
+  "label": "Doctor Blade Coating",
+  "profile": "Manufacturing",
+  "adds": {
+    "Manufacturing": [
+      "DoctorBladeCoating"
+    ],
+    "Parameter": [
+      "BladeGap",
+      "CoatingSpeed",
+      "Passes",
+      "SubstrateTemperature"
+    ],
+    "Instrument": [
+      "DoctorBladeCoater",
+      "HotPlate"
+    ],
+    "Matter": [
+      "CatalystInk",
+      "CoatedElectrode",
+      "ElectrodeSubstrate"
+    ]
+  },
+  "relationships": [
+    [
+      "DoctorBladeCoating",
+      "hasParameter",
+      "BladeGap"
+    ],
+    [
+      "DoctorBladeCoating",
+      "hasParameter",
+      "CoatingSpeed"
+    ],
+    [
+      "DoctorBladeCoating",
+      "hasParameter",
+      "SubstrateTemperature"
+    ],
+    [
+      "DoctorBladeCoating",
+      "hasParameter",
+      "Passes"
+    ],
+    [
+      "DoctorBladeCoating",
+      "usesInstrument",
+      "DoctorBladeCoater"
+    ],
+    [
+      "DoctorBladeCoating",
+      "usesInstrument",
+      "HotPlate"
+    ],
+    [
+      "DoctorBladeCoating",
+      "hasInputMaterial",
+      "CatalystInk"
+    ],
+    [
+      "DoctorBladeCoating",
+      "hasInputMaterial",
+      "ElectrodeSubstrate"
+    ],
+    [
+      "DoctorBladeCoating",
+      "hasOutputMaterial",
+      "CoatedElectrode"
+    ]
+  ],
+  "curated_values": {
+    "BladeGap": {
+      "numericValue": null,
+      "quantityKind": "Length",
+      "unitHuman": "um"
+    },
+    "CoatingSpeed": {
+      "numericValue": null,
+      "quantityKind": "LinearVelocity",
+      "unitHuman": "mm/s"
+    },
+    "SubstrateTemperature": {
+      "numericValue": null,
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C"
+    },
+    "Passes": {
+      "numericValue": null,
+      "quantityKind": "Dimensionless",
+      "unitHuman": "unitless"
+    }
+  },
+  "units_map": {
+    "°C": "DEG_C",
+    "C": "DEG_C",
+    "K": "K",
+    "s": "SEC",
+    "sec": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "hr": "HR",
+    "Pa": "PA",
+    "kPa": "KiloPA",
+    "bar": "BAR",
+    "mbar": "MilliBAR",
+    "Torr": "TORR",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLM": "L-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "L/min": "L-PER-MIN",
+    "nm/min": "NanoM-PER-MIN",
+    "W": "W",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mm/s": "MilliM-PER-SEC",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "mm": "MilliM",
+    "cm": "CentiM",
+    "nm": "NanoM",
+    "V": "V",
+    "mV": "MilliV",
+    "A": "A",
+    "mA": "MilliA",
+    "M": "MOL-PER-L",
+    "wt%": "PERCENT",
+    "%": "PERCENT",
+    "ppm": "PPM",
+    "N": "N",
+    "N·m": "N-M",
+    "N*m": "N-M",
+    "mg/cm2": "MilliGM-PER-CentiM2"
+  },
+  "shapes_files": []
+}

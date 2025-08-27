@@ -1,0 +1,43 @@
+{
+  "id": "CTX_Cell_ThreeElectrode",
+  "label": "Cell: Three‑Electrode Beaker",
+  "profile": "Context",
+  "why": "Canonical three‑electrode benchtop configuration (WE/CE/RE).",
+  "keywords": [
+    "three-electrode",
+    "beaker",
+    "bench cell",
+    "Luggin"
+  ],
+  "adds": {
+    "Parameter": [
+      "CellConfiguration"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "CellConfiguration": {
+      "unitHuman": "unitless"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

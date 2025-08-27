@@ -1,0 +1,170 @@
+{
+  "id": "MEAS_FC_AST",
+  "label": "Fuel Cell Accelerated Stress Test (AST)",
+  "profile": "MEA",
+  "why": "Measurement template for Fuel Cell Accelerated Stress Test (AST).",
+  "keywords": [
+    "FuelCell",
+    "AST",
+    "Degradation",
+    "Cycles",
+    "Stability"
+  ],
+  "adds": {
+    "Measurement": [
+      "FuelCellAcceleratedStressTest"
+    ],
+    "Property": [
+      "StabilityMetric",
+      "CurrentDensity",
+      "PowerDensity"
+    ],
+    "Parameter": [
+      "CycleCount",
+      "UpperPotentialLimit",
+      "LowerPotentialLimit",
+      "ScanRate",
+      "OperatingTemperature",
+      "RelativeHumidity"
+    ],
+    "Instrument": [
+      "FuelCellTestStation"
+    ],
+    "Data": [
+      "ExperimentDataset"
+    ]
+  },
+  "relationships": [
+    [
+      "FuelCellAcceleratedStressTest",
+      "usesInstrument",
+      "FuelCellTestStation"
+    ],
+    [
+      "FuelCellAcceleratedStressTest",
+      "hasParameter",
+      "CycleCount"
+    ],
+    [
+      "FuelCellAcceleratedStressTest",
+      "hasParameter",
+      "UpperPotentialLimit"
+    ],
+    [
+      "FuelCellAcceleratedStressTest",
+      "hasParameter",
+      "LowerPotentialLimit"
+    ],
+    [
+      "FuelCellAcceleratedStressTest",
+      "hasParameter",
+      "ScanRate"
+    ],
+    [
+      "FuelCellAcceleratedStressTest",
+      "hasParameter",
+      "OperatingTemperature"
+    ],
+    [
+      "FuelCellAcceleratedStressTest",
+      "hasParameter",
+      "RelativeHumidity"
+    ],
+    [
+      "FuelCellAcceleratedStressTest",
+      "measures",
+      "StabilityMetric"
+    ],
+    [
+      "FuelCellAcceleratedStressTest",
+      "measures",
+      "CurrentDensity"
+    ],
+    [
+      "FuelCellAcceleratedStressTest",
+      "measures",
+      "PowerDensity"
+    ],
+    [
+      "FuelCellAcceleratedStressTest",
+      "hasOutputData",
+      "ExperimentDataset"
+    ]
+  ],
+  "curated_values": {
+    "CycleCount": {
+      "quantityKind": "Dimensionless",
+      "unitHuman": "unitless"
+    },
+    "UpperPotentialLimit": {
+      "quantityKind": "ElectricPotential",
+      "unitHuman": "V"
+    },
+    "LowerPotentialLimit": {
+      "quantityKind": "ElectricPotential",
+      "unitHuman": "V"
+    },
+    "ScanRate": {
+      "quantityKind": "Frequency",
+      "unitHuman": "mV/s"
+    },
+    "OperatingTemperature": {
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C"
+    },
+    "RelativeHumidity": {
+      "quantityKind": "Dimensionless",
+      "unitHuman": "%"
+    },
+    "StabilityMetric": {
+      "quantityKind": "Dimensionless",
+      "unitHuman": "%"
+    },
+    "CurrentDensity": {
+      "quantityKind": "ElectricCurrentDensity",
+      "unitHuman": "mA/cm2",
+      "normalizationBasis": "GeometricArea"
+    },
+    "PowerDensity": {
+      "quantityKind": "PowerPerArea",
+      "unitHuman": "mW/cm2"
+    }
+  },
+  "units_map": {
+    "mA/cm2": "MilliA-PER-CentiM2",
+    "A/cm2": "A-PER-CentiM2",
+    "mV": "MilliV",
+    "V": "V",
+    "°C": "DEG_C",
+    "K": "K",
+    "%": "PERCENT",
+    "ohm": "OHM",
+    "Hz": "HZ",
+    "kHz": "KiloHZ",
+    "rpm": "REV-PER-MIN",
+    "s": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "M": "MOL-PER-L",
+    "mV/s": "MilliV-PER-SEC",
+    "V/s": "V-PER-SEC",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "A": "A",
+    "mA": "MilliA",
+    "uA": "MicroA",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "W/cm2": "W-PER-CentiM2",
+    "F/g": "FARAD-PER-GM",
+    "F/cm2": "FARAD-PER-CentiM2",
+    "Wh/kg": "W-HR-PER-KiloGM",
+    "W/kg": "W-PER-KiloGM",
+    "mAh/g": "MilliA-HR-PER-GM",
+    "mAh/cm2": "MilliA-HR-PER-CentiM2",
+    "unitless": "UNITLESS",
+    "1/cm3": "PER-CentiM3",
+    "mS/cm": "MilliS-PER-CentiM",
+    "mL/min": "MilliL-PER-MIN",
+    "sccm": "CentiM3-PER-MIN"
+  },
+  "shapes_files": []
+}

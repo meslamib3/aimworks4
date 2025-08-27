@@ -1,0 +1,136 @@
+{
+  "id": "PROC_Deposition_DropCast",
+  "label": "Drop‑Casting Deposition",
+  "profile": "Manufacturing",
+  "adds": {
+    "Manufacturing": [
+      "DropCasting"
+    ],
+    "Parameter": [
+      "DispenseVolume",
+      "DropCount",
+      "DryingTime",
+      "SubstrateTemperature"
+    ],
+    "Instrument": [
+      "HotPlate",
+      "Micropipette"
+    ],
+    "Matter": [
+      "CatalystInk",
+      "CoatedElectrode",
+      "ElectrodeSubstrate"
+    ]
+  },
+  "relationships": [
+    [
+      "DropCasting",
+      "hasParameter",
+      "DispenseVolume"
+    ],
+    [
+      "DropCasting",
+      "hasParameter",
+      "DropCount"
+    ],
+    [
+      "DropCasting",
+      "hasParameter",
+      "SubstrateTemperature"
+    ],
+    [
+      "DropCasting",
+      "hasParameter",
+      "DryingTime"
+    ],
+    [
+      "DropCasting",
+      "usesInstrument",
+      "Micropipette"
+    ],
+    [
+      "DropCasting",
+      "usesInstrument",
+      "HotPlate"
+    ],
+    [
+      "DropCasting",
+      "hasInputMaterial",
+      "CatalystInk"
+    ],
+    [
+      "DropCasting",
+      "hasInputMaterial",
+      "ElectrodeSubstrate"
+    ],
+    [
+      "DropCasting",
+      "hasOutputMaterial",
+      "CoatedElectrode"
+    ]
+  ],
+  "curated_values": {
+    "DispenseVolume": {
+      "numericValue": null,
+      "quantityKind": "Volume",
+      "unitHuman": "mL"
+    },
+    "DropCount": {
+      "numericValue": null,
+      "quantityKind": "Dimensionless",
+      "unitHuman": "unitless"
+    },
+    "SubstrateTemperature": {
+      "numericValue": null,
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C"
+    },
+    "DryingTime": {
+      "numericValue": null,
+      "quantityKind": "Time",
+      "unitHuman": "min"
+    }
+  },
+  "units_map": {
+    "°C": "DEG_C",
+    "C": "DEG_C",
+    "K": "K",
+    "s": "SEC",
+    "sec": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "hr": "HR",
+    "Pa": "PA",
+    "kPa": "KiloPA",
+    "bar": "BAR",
+    "mbar": "MilliBAR",
+    "Torr": "TORR",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLM": "L-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "L/min": "L-PER-MIN",
+    "nm/min": "NanoM-PER-MIN",
+    "W": "W",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mm/s": "MilliM-PER-SEC",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "mm": "MilliM",
+    "cm": "CentiM",
+    "nm": "NanoM",
+    "V": "V",
+    "mV": "MilliV",
+    "A": "A",
+    "mA": "MilliA",
+    "M": "MOL-PER-L",
+    "wt%": "PERCENT",
+    "%": "PERCENT",
+    "ppm": "PPM",
+    "N": "N",
+    "N·m": "N-M",
+    "N*m": "N-M",
+    "mg/cm2": "MilliGM-PER-CentiM2"
+  },
+  "shapes_files": []
+}

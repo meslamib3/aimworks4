@@ -1,0 +1,126 @@
+{
+  "id": "PROC_Support_Doping",
+  "label": "Support Doping (N/O/S)",
+  "profile": "Manufacturing",
+  "adds": {
+    "Manufacturing": [
+      "SupportDoping"
+    ],
+    "Parameter": [
+      "AtmosphereGas",
+      "DopantElement",
+      "DopingTemperature",
+      "DopingTime"
+    ],
+    "Instrument": [
+      "MassFlowController",
+      "TubeFurnace"
+    ],
+    "Matter": [
+      "DopantSource",
+      "DopedSupport",
+      "SupportMaterial"
+    ]
+  },
+  "relationships": [
+    [
+      "SupportDoping",
+      "hasParameter",
+      "DopantElement"
+    ],
+    [
+      "SupportDoping",
+      "hasParameter",
+      "DopingTemperature"
+    ],
+    [
+      "SupportDoping",
+      "hasParameter",
+      "DopingTime"
+    ],
+    [
+      "SupportDoping",
+      "hasParameter",
+      "AtmosphereGas"
+    ],
+    [
+      "SupportDoping",
+      "usesInstrument",
+      "TubeFurnace"
+    ],
+    [
+      "SupportDoping",
+      "usesInstrument",
+      "MassFlowController"
+    ],
+    [
+      "SupportDoping",
+      "hasInputMaterial",
+      "SupportMaterial"
+    ],
+    [
+      "SupportDoping",
+      "hasInputMaterial",
+      "DopantSource"
+    ],
+    [
+      "SupportDoping",
+      "hasOutputMaterial",
+      "DopedSupport"
+    ]
+  ],
+  "curated_values": {
+    "DopingTemperature": {
+      "numericValue": null,
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C"
+    },
+    "DopingTime": {
+      "numericValue": null,
+      "quantityKind": "Time",
+      "unitHuman": "h"
+    }
+  },
+  "units_map": {
+    "°C": "DEG_C",
+    "C": "DEG_C",
+    "K": "K",
+    "s": "SEC",
+    "sec": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "hr": "HR",
+    "Pa": "PA",
+    "kPa": "KiloPA",
+    "bar": "BAR",
+    "mbar": "MilliBAR",
+    "Torr": "TORR",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLM": "L-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "L/min": "L-PER-MIN",
+    "nm/min": "NanoM-PER-MIN",
+    "W": "W",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mm/s": "MilliM-PER-SEC",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "mm": "MilliM",
+    "cm": "CentiM",
+    "nm": "NanoM",
+    "V": "V",
+    "mV": "MilliV",
+    "A": "A",
+    "mA": "MilliA",
+    "M": "MOL-PER-L",
+    "wt%": "PERCENT",
+    "%": "PERCENT",
+    "ppm": "PPM",
+    "N": "N",
+    "N·m": "N-M",
+    "N*m": "N-M",
+    "mg/cm2": "MilliGM-PER-CentiM2"
+  },
+  "shapes_files": []
+}

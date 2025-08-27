@@ -1,0 +1,169 @@
+{
+  "id": "MEAS_CO2RR_HCell",
+  "label": "CO₂RR H‑Cell Test",
+  "profile": "CO2RR-HCell",
+  "why": "Measurement template for CO₂RR H‑Cell Test.",
+  "keywords": [
+    "CO2RR",
+    "HCell",
+    "FaradaicEfficiency",
+    "PartialCurrentDensity",
+    "KHCO3"
+  ],
+  "adds": {
+    "Measurement": [
+      "CO2RR_HCell"
+    ],
+    "Property": [
+      "FaradaicEfficiency",
+      "PartialCurrentDensity",
+      "Selectivity"
+    ],
+    "Parameter": [
+      "ElectrolyteType",
+      "ElectrolyteConcentration",
+      "pH",
+      "GasFlowRate",
+      "ReferenceScale",
+      "Temperature"
+    ],
+    "Instrument": [
+      "ElectrochemicalWorkstation",
+      "GasChromatograph"
+    ],
+    "Data": [
+      "ExperimentDataset"
+    ]
+  },
+  "relationships": [
+    [
+      "CO2RR_HCell",
+      "usesInstrument",
+      "ElectrochemicalWorkstation"
+    ],
+    [
+      "CO2RR_HCell",
+      "hasParameter",
+      "ElectrolyteType"
+    ],
+    [
+      "CO2RR_HCell",
+      "hasParameter",
+      "ElectrolyteConcentration"
+    ],
+    [
+      "CO2RR_HCell",
+      "hasParameter",
+      "pH"
+    ],
+    [
+      "CO2RR_HCell",
+      "hasParameter",
+      "GasFlowRate"
+    ],
+    [
+      "CO2RR_HCell",
+      "hasParameter",
+      "ReferenceScale"
+    ],
+    [
+      "CO2RR_HCell",
+      "hasParameter",
+      "Temperature"
+    ],
+    [
+      "CO2RR_HCell",
+      "measures",
+      "FaradaicEfficiency"
+    ],
+    [
+      "CO2RR_HCell",
+      "measures",
+      "PartialCurrentDensity"
+    ],
+    [
+      "CO2RR_HCell",
+      "measures",
+      "Selectivity"
+    ],
+    [
+      "CO2RR_HCell",
+      "hasOutputData",
+      "ExperimentDataset"
+    ]
+  ],
+  "curated_values": {
+    "ElectrolyteType": {
+      "unitHuman": "unitless"
+    },
+    "ElectrolyteConcentration": {
+      "quantityKind": "AmountOfSubstanceConcentration",
+      "unitHuman": "M"
+    },
+    "pH": {
+      "quantityKind": "Dimensionless",
+      "unitHuman": "unitless"
+    },
+    "GasFlowRate": {
+      "quantityKind": "VolumePerTime",
+      "unitHuman": "sccm"
+    },
+    "ReferenceScale": {
+      "referenceScale": "RHE"
+    },
+    "Temperature": {
+      "quantityKind": "ThermodynamicTemperature",
+      "unitHuman": "°C"
+    },
+    "FaradaicEfficiency": {
+      "quantityKind": "Dimensionless",
+      "unitHuman": "%"
+    },
+    "PartialCurrentDensity": {
+      "quantityKind": "ElectricCurrentDensity",
+      "unitHuman": "mA/cm2",
+      "normalizationBasis": "GeometricArea"
+    },
+    "Selectivity": {
+      "quantityKind": "Dimensionless",
+      "unitHuman": "%"
+    }
+  },
+  "units_map": {
+    "mA/cm2": "MilliA-PER-CentiM2",
+    "A/cm2": "A-PER-CentiM2",
+    "mV": "MilliV",
+    "V": "V",
+    "°C": "DEG_C",
+    "K": "K",
+    "%": "PERCENT",
+    "ohm": "OHM",
+    "Hz": "HZ",
+    "kHz": "KiloHZ",
+    "rpm": "REV-PER-MIN",
+    "s": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "M": "MOL-PER-L",
+    "mV/s": "MilliV-PER-SEC",
+    "V/s": "V-PER-SEC",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "A": "A",
+    "mA": "MilliA",
+    "uA": "MicroA",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "W/cm2": "W-PER-CentiM2",
+    "F/g": "FARAD-PER-GM",
+    "F/cm2": "FARAD-PER-CentiM2",
+    "Wh/kg": "W-HR-PER-KiloGM",
+    "W/kg": "W-PER-KiloGM",
+    "mAh/g": "MilliA-HR-PER-GM",
+    "mAh/cm2": "MilliA-HR-PER-CentiM2",
+    "unitless": "UNITLESS",
+    "1/cm3": "PER-CentiM3",
+    "mS/cm": "MilliS-PER-CentiM",
+    "mL/min": "MilliL-PER-MIN",
+    "sccm": "CentiM3-PER-MIN"
+  },
+  "shapes_files": []
+}

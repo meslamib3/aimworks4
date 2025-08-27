@@ -1,0 +1,136 @@
+{
+  "id": "PROC_Sputter",
+  "label": "Sputter Deposition",
+  "profile": "Manufacturing",
+  "adds": {
+    "Manufacturing": [
+      "SputterDeposition"
+    ],
+    "Parameter": [
+      "SputterGas",
+      "SputterPower",
+      "SputterPressure",
+      "SputterRate",
+      "SputterTime"
+    ],
+    "Instrument": [
+      "SputterSystem"
+    ],
+    "Matter": [
+      "CoatedSubstrate",
+      "Substrate",
+      "TargetMaterial"
+    ]
+  },
+  "relationships": [
+    [
+      "SputterDeposition",
+      "hasParameter",
+      "SputterPower"
+    ],
+    [
+      "SputterDeposition",
+      "hasParameter",
+      "SputterPressure"
+    ],
+    [
+      "SputterDeposition",
+      "hasParameter",
+      "SputterTime"
+    ],
+    [
+      "SputterDeposition",
+      "hasParameter",
+      "SputterGas"
+    ],
+    [
+      "SputterDeposition",
+      "hasParameter",
+      "SputterRate"
+    ],
+    [
+      "SputterDeposition",
+      "usesInstrument",
+      "SputterSystem"
+    ],
+    [
+      "SputterDeposition",
+      "hasInputMaterial",
+      "TargetMaterial"
+    ],
+    [
+      "SputterDeposition",
+      "hasInputMaterial",
+      "Substrate"
+    ],
+    [
+      "SputterDeposition",
+      "hasOutputMaterial",
+      "CoatedSubstrate"
+    ]
+  ],
+  "curated_values": {
+    "SputterPower": {
+      "numericValue": null,
+      "quantityKind": "Power",
+      "unitHuman": "W"
+    },
+    "SputterPressure": {
+      "numericValue": null,
+      "quantityKind": "Pressure",
+      "unitHuman": "Pa"
+    },
+    "SputterTime": {
+      "numericValue": null,
+      "quantityKind": "Time",
+      "unitHuman": "min"
+    },
+    "SputterRate": {
+      "numericValue": null,
+      "quantityKind": "LinearVelocity",
+      "unitHuman": "nm/min"
+    }
+  },
+  "units_map": {
+    "°C": "DEG_C",
+    "C": "DEG_C",
+    "K": "K",
+    "s": "SEC",
+    "sec": "SEC",
+    "min": "MIN",
+    "h": "HR",
+    "hr": "HR",
+    "Pa": "PA",
+    "kPa": "KiloPA",
+    "bar": "BAR",
+    "mbar": "MilliBAR",
+    "Torr": "TORR",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLM": "L-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "L/min": "L-PER-MIN",
+    "nm/min": "NanoM-PER-MIN",
+    "W": "W",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mm/s": "MilliM-PER-SEC",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "mm": "MilliM",
+    "cm": "CentiM",
+    "nm": "NanoM",
+    "V": "V",
+    "mV": "MilliV",
+    "A": "A",
+    "mA": "MilliA",
+    "M": "MOL-PER-L",
+    "wt%": "PERCENT",
+    "%": "PERCENT",
+    "ppm": "PPM",
+    "N": "N",
+    "N·m": "N-M",
+    "N*m": "N-M",
+    "mg/cm2": "MilliGM-PER-CentiM2"
+  },
+  "shapes_files": []
+}

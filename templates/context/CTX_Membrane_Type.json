@@ -1,0 +1,43 @@
+{
+  "id": "CTX_Membrane_Type",
+  "label": "Membrane Type (CEM/AEM)",
+  "profile": "Context",
+  "why": "Selects cation‑exchange (CEM) or anion‑exchange (AEM) membrane family.",
+  "keywords": [
+    "membrane",
+    "CEM",
+    "AEM",
+    "ion exchange"
+  ],
+  "adds": {
+    "Parameter": [
+      "MembraneType"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "MembraneType": {
+      "unitHuman": "unitless"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L",
+    "mol/L": "MOL-PER-L",
+    "°C": "DEG_C",
+    "K": "K",
+    "bar": "BAR",
+    "Pa": "PA",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "cm2": "CentiM2",
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "mL/min": "MilliL-PER-MIN",
+    "rpm": "REV-PER-MIN",
+    "mm": "MilliM",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "mV": "MilliV",
+    "Hz": "HZ",
+    "s": "SEC"
+  },
+  "shapes_files": []
+}

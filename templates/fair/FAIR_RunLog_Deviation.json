@@ -1,0 +1,60 @@
+{
+  "id": "FAIR_RunLog_Deviation",
+  "label": "Run Log & Deviations",
+  "profile": "FAIR",
+  "adds": {
+    "Data": [
+      "ExperimentDataset",
+      "RunLog",
+      "DeviationsRecord"
+    ],
+    "Parameter": [
+      "RunCount",
+      "TotalRunTime"
+    ]
+  },
+  "relationships": [
+    [
+      "RunLog",
+      "isPartOf",
+      "ExperimentDataset"
+    ],
+    [
+      "RunLog",
+      "hasPart",
+      "DeviationsRecord"
+    ],
+    [
+      "RunLog",
+      "hasParameter",
+      "RunCount"
+    ],
+    [
+      "RunLog",
+      "hasParameter",
+      "TotalRunTime"
+    ],
+    [
+      "DeviationsRecord",
+      "isPartOf",
+      "ExperimentDataset"
+    ]
+  ],
+  "curated_values": {
+    "RunCount": {
+      "quantityKind": "Dimensionless",
+      "unitHuman": "unitless",
+      "numericValue": null
+    },
+    "TotalRunTime": {
+      "quantityKind": "Time",
+      "unitHuman": "h",
+      "numericValue": null
+    }
+  },
+  "units_map": {
+    "unitless": "UNITLESS",
+    "h": "HR"
+  },
+  "shapes_embed": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix qudt: <http://qudt.org/schema/qudt/> .\n@prefix unit: <http://qudt.org/vocab/unit/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix base: <https://w3id.org/h2kg/hydrogen-ontology#> .\n    \n    base:Shape_RunLog a sh:NodeShape ;\n      sh:targetNode base:RunLog ;\n      sh:property [ sh:path base:isPartOf ; sh:hasValue base:ExperimentDataset ; sh:minCount 1 ] ;\n      sh:property [ sh:path base:hasPart ; sh:hasValue base:DeviationsRecord ; sh:minCount 1 ; sh:severity sh:Warning ] ;\n      sh:property [ sh:path base:hasParameter ; sh:minCount 1 ; sh:severity sh:Warning ] .\n    "
+}

@@ -1,0 +1,77 @@
+{
+  "id": "INST_MFC",
+  "label": "Mass Flow Controller",
+  "profile": "Instrument",
+  "why": "Closed-loop control of gas flow rates into cells or detectors.",
+  "keywords": [
+    "MFC",
+    "mass flow controller",
+    "flow",
+    "sccm"
+  ],
+  "adds": {
+    "Instrument": [
+      "MassFlowController"
+    ],
+    "Parameter": [
+      "FlowRate",
+      "GasType"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "FlowRate": {
+      "quantityKind": "VolumeFlowRate",
+      "unitHuman": "sccm"
+    },
+    "GasType": {
+      "quantityKind": "Dimensionless",
+      "unitHuman": "unitless"
+    }
+  },
+  "units_map": {
+    "mV": "MilliV",
+    "V": "V",
+    "A": "AMP",
+    "mA": "MilliA",
+    "ohm": "OHM",
+    "Hz": "HZ",
+    "kHz": "KiloHZ",
+    "MHz": "MegaHZ",
+    "s": "SEC",
+    "ms": "MilliSEC",
+    "min": "MIN",
+    "h": "HR",
+    "°C": "DEG_C",
+    "degC": "DEG_C",
+    "K": "K",
+    "rpm": "REV-PER-MIN",
+    "sccm": "CentiM3-PER-MIN",
+    "SLPM": "L-PER-MIN",
+    "cm3/min": "CentiM3-PER-MIN",
+    "mL/min": "MilliL-PER-MIN",
+    "uL/min": "MicroL-PER-MIN",
+    "µL/min": "MicroL-PER-MIN",
+    "bar": "BAR",
+    "kPa": "KiloPA",
+    "psi": "PSI",
+    "nm": "NanoM",
+    "um": "MicroM",
+    "µm": "MicroM",
+    "cm2": "CentiM2",
+    "cm^-1": "PER-CentiM",
+    "cm-1": "PER-CentiM",
+    "Angstrom": "ANGSTROM",
+    "eV": "EV",
+    "mW/cm2": "MilliW-PER-CentiM2",
+    "W/m2": "W-PER-M2",
+    "ppm": "PPM",
+    "%": "PERCENT",
+    "unitless": "UNITLESS",
+    "deg": "DEG",
+    "deg/min": "DEG-PER-MIN",
+    "nm/min": "NanoM-PER-MIN"
+  },
+  "shapes_files": [],
+  "datapoints": []
+}
