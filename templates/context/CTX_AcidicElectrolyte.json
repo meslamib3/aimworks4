@@ -1,0 +1,28 @@
+{
+  "id": "CTX_AcidicElectrolyte",
+  "label": "Acidic Electrolyte (HClO4 / H2SO4)",
+  "profile": "Context",
+  "keywords": [
+    "HClO4",
+    "H2SO4",
+    "acidic",
+    "electrolyte"
+  ],
+  "adds": {
+    "Parameter": [
+      "ElectrolyteType",
+      "ElectrolyteConcentration"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "ElectrolyteConcentration": {
+      "unitHuman": "M",
+      "quantityKind": "AmountOfSubstanceConcentration"
+    }
+  },
+  "units_map": {
+    "M": "MOL-PER-L"
+  },
+  "shapes_files": []
+}

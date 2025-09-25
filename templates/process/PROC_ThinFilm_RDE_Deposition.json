@@ -1,0 +1,99 @@
+{
+  "id": "PROC_ThinFilm_RDE_Deposition",
+  "label": "Thin-Film RDE Deposition (Pt/C on GC)",
+  "profile": "Manufacturing",
+  "adds": {
+    "Manufacturing": [
+      "ThinFilmRDEDepositing"
+    ],
+    "Parameter": [
+      "CatalystLoading",
+      "DropcastVolume",
+      "DryingTemperature",
+      "DryingTime"
+    ],
+    "Matter": [
+      "CatalystInk",
+      "GlassyCarbonDisk",
+      "RDECoatedElectrode"
+    ],
+    "Instrument": [
+      "Pipette",
+      "Hotplate"
+    ]
+  },
+  "relationships": [
+    [
+      "ThinFilmRDEDepositing",
+      "hasParameter",
+      "CatalystLoading"
+    ],
+    [
+      "ThinFilmRDEDepositing",
+      "hasParameter",
+      "DropcastVolume"
+    ],
+    [
+      "ThinFilmRDEDepositing",
+      "hasParameter",
+      "DryingTemperature"
+    ],
+    [
+      "ThinFilmRDEDepositing",
+      "hasParameter",
+      "DryingTime"
+    ],
+    [
+      "ThinFilmRDEDepositing",
+      "usesInstrument",
+      "Pipette"
+    ],
+    [
+      "ThinFilmRDEDepositing",
+      "usesInstrument",
+      "Hotplate"
+    ],
+    [
+      "ThinFilmRDEDepositing",
+      "hasInputMaterial",
+      "CatalystInk"
+    ],
+    [
+      "ThinFilmRDEDepositing",
+      "hasInputMaterial",
+      "GlassyCarbonDisk"
+    ],
+    [
+      "ThinFilmRDEDepositing",
+      "hasOutputMaterial",
+      "RDECoatedElectrode"
+    ]
+  ],
+  "curated_values": {
+    "CatalystLoading": {
+      "unitHuman": "mg/cm2",
+      "quantityKind": "AreaDensity"
+    },
+    "DropcastVolume": {
+      "unitHuman": "uL",
+      "quantityKind": "Volume"
+    },
+    "DryingTemperature": {
+      "unitHuman": "degC",
+      "quantityKind": "ThermodynamicTemperature"
+    },
+    "DryingTime": {
+      "unitHuman": "min",
+      "quantityKind": "Time"
+    }
+  },
+  "units_map": {
+    "mg/cm2": "MilliGM-PER-CentiM2",
+    "uL": "MicroL",
+    "°C": "DEG_C",
+    "Â°C": "DEG_C",
+    "degC": "DEG_C",
+    "min": "MIN"
+  },
+  "shapes_files": []
+}

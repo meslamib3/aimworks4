@@ -1,0 +1,127 @@
+{
+  "id": "MEAS_ECSA_CV_Hupd",
+  "label": "ECSA by Hupd (CV)",
+  "profile": "Electrochemistry",
+  "keywords": [
+    "ECSA",
+    "CV",
+    "Hupd",
+    "Pt/C"
+  ],
+  "adds": {
+    "Measurement": [
+      "CyclicVoltammetry_Hupd"
+    ],
+    "Property": [
+      "ElectrochemicallyActiveSurfaceArea"
+    ],
+    "Parameter": [
+      "ScanRate",
+      "PotentialWindow",
+      "ReferenceScale",
+      "ElectrolyteConcentration",
+      "ElectrolyteType",
+      "Temperature"
+    ],
+    "Instrument": [
+      "ElectrochemicalWorkstation"
+    ],
+    "Data": [
+      "ExperimentDataset"
+    ]
+  },
+  "relationships": [
+    [
+      "CyclicVoltammetry_Hupd",
+      "usesInstrument",
+      "ElectrochemicalWorkstation"
+    ],
+    [
+      "CyclicVoltammetry_Hupd",
+      "hasParameter",
+      "ScanRate"
+    ],
+    [
+      "CyclicVoltammetry_Hupd",
+      "hasParameter",
+      "PotentialWindow"
+    ],
+    [
+      "CyclicVoltammetry_Hupd",
+      "hasParameter",
+      "ReferenceScale"
+    ],
+    [
+      "CyclicVoltammetry_Hupd",
+      "hasParameter",
+      "ElectrolyteConcentration"
+    ],
+    [
+      "CyclicVoltammetry_Hupd",
+      "hasParameter",
+      "ElectrolyteType"
+    ],
+    [
+      "CyclicVoltammetry_Hupd",
+      "hasParameter",
+      "Temperature"
+    ],
+    [
+      "CyclicVoltammetry_Hupd",
+      "measures",
+      "ElectrochemicallyActiveSurfaceArea"
+    ],
+    [
+      "CyclicVoltammetry_Hupd",
+      "hasOutputData",
+      "ExperimentDataset"
+    ]
+  ],
+  "curated_values": {
+    "ScanRate": {
+      "unitHuman": "mV/s",
+      "quantityKind": "AngularVelocity"
+    },
+    "PotentialWindow": {
+      "unitHuman": "V",
+      "quantityKind": "ElectricPotential"
+    },
+    "ReferenceScale": {
+      "referenceScale": "RHE"
+    },
+    "ElectrolyteConcentration": {
+      "unitHuman": "M",
+      "quantityKind": "AmountOfSubstanceConcentration"
+    },
+    "Temperature": {
+      "unitHuman": "degC",
+      "quantityKind": "ThermodynamicTemperature"
+    },
+    "ElectrochemicallyActiveSurfaceArea": {
+      "unitHuman": "m2/g",
+      "quantityKind": "AreaPerMass",
+      "normalizationBasis": "CatalystMass"
+    }
+  },
+  "datapoints": [
+    {
+      "ofProperty": "ElectrochemicallyActiveSurfaceArea",
+      "fromMeasurement": "CyclicVoltammetry_Hupd",
+      "value": {
+        "unitHuman": "m2/g",
+        "quantityKind": "AreaPerMass"
+      },
+      "normalizedTo": "CatalystMass"
+    }
+  ],
+  "units_map": {
+    "mV/s": "MilliV-PER-SEC",
+    "V": "V",
+    "M": "MOL-PER-L",
+    "degC": "DEG_C",
+    "Â°C": "DEG_C",
+    "°C": "DEG_C",
+    "m2/g": "M2-PER-GM"
+  },
+  "shapes_files": []
+}

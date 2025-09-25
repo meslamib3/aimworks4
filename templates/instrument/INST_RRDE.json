@@ -1,0 +1,41 @@
+{
+  "id": "INST_RRDE",
+  "label": "Rotating Ring-Disk Electrode (RRDE)",
+  "profile": "Instrument",
+  "keywords": [
+    "RRDE",
+    "ring potential",
+    "collection efficiency"
+  ],
+  "adds": {
+    "Instrument": [
+      "RotatingRingDiskElectrode"
+    ],
+    "Parameter": [
+      "RotationRate",
+      "RingPotential",
+      "CollectionEfficiency"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "RotationRate": {
+      "unitHuman": "rpm",
+      "quantityKind": "Frequency"
+    },
+    "RingPotential": {
+      "unitHuman": "mV",
+      "quantityKind": "ElectricPotential"
+    },
+    "CollectionEfficiency": {
+      "unitHuman": "%",
+      "quantityKind": "Dimensionless"
+    }
+  },
+  "units_map": {
+    "rpm": "REV-PER-MIN",
+    "mV": "MilliV",
+    "%": "PERCENT"
+  },
+  "shapes_files": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "CTX_OxygenSaturation",
+  "label": "Oxygen Saturation",
+  "profile": "Context",
+  "adds": {
+    "Parameter": [
+      "OxygenSaturation"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "OxygenSaturation": {
+      "unitHuman": "%",
+      "quantityKind": "Dimensionless"
+    }
+  },
+  "units_map": {
+    "%": "PERCENT"
+  },
+  "shapes_files": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "CTX_Temperature_Control",
+  "label": "Temperature Control (25–80 °C)",
+  "profile": "Context",
+  "adds": {
+    "Parameter": [
+      "Temperature"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "Temperature": {
+      "unitHuman": "degC",
+      "quantityKind": "ThermodynamicTemperature"
+    }
+  },
+  "units_map": {
+    "degC": "DEG_C",
+    "Â°C": "DEG_C",
+    "°C": "DEG_C",
+    "K": "K"
+  },
+  "shapes_files": []
+}

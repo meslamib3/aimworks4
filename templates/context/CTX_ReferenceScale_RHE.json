@@ -1,0 +1,18 @@
+{
+  "id": "CTX_ReferenceScale_RHE",
+  "label": "Reference Scale = RHE",
+  "profile": "Context",
+  "adds": {
+    "Parameter": [
+      "ReferenceScale"
+    ]
+  },
+  "relationships": [],
+  "curated_values": {
+    "ReferenceScale": {
+      "referenceScale": "RHE"
+    }
+  },
+  "units_map": {},
+  "shapes_files": []
+}

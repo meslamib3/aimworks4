@@ -1,0 +1,28 @@
+{
+  "id": "METR_SpecificActivity",
+  "label": "Specific Activity",
+  "profile": "Metric",
+  "keywords": [
+    "activity",
+    "A/cm2",
+    "ECSA-normalized"
+  ],
+  "adds": {
+    "Property": [
+      "SpecificActivity"
+    ],
+    "Parameter": []
+  },
+  "relationships": [],
+  "curated_values": {
+    "SpecificActivity": {
+      "unitHuman": "A/cm2",
+      "quantityKind": "ElectricCurrent",
+      "normalizationBasis": "ECSA"
+    }
+  },
+  "units_map": {
+    "A/cm2": "A-PER-CentiM2"
+  },
+  "shapes_files": []
+}

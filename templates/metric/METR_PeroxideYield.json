@@ -1,0 +1,22 @@
+{
+  "id": "METR_PeroxideYield",
+  "label": "Peroxide Yield",
+  "profile": "Metric",
+  "adds": {
+    "Property": [
+      "PeroxideYield"
+    ],
+    "Parameter": []
+  },
+  "relationships": [],
+  "curated_values": {
+    "PeroxideYield": {
+      "unitHuman": "%",
+      "quantityKind": "Dimensionless"
+    }
+  },
+  "units_map": {
+    "%": "PERCENT"
+  },
+  "shapes_files": []
+}

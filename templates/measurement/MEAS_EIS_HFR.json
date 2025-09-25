@@ -1,0 +1,127 @@
+{
+  "id": "MEAS_EIS_HFR",
+  "label": "EIS for High-Frequency Resistance (HFR)",
+  "profile": "Electrochemistry",
+  "keywords": [
+    "EIS",
+    "HFR",
+    "Nyquist",
+    "bode"
+  ],
+  "adds": {
+    "Measurement": [
+      "ElectrochemicalImpedanceSpectroscopy"
+    ],
+    "Property": [
+      "HighFrequencyResistance"
+    ],
+    "Parameter": [
+      "FrequencyRange",
+      "ACAmplitude",
+      "BiasPotential",
+      "ReferenceScale",
+      "Temperature",
+      "ElectrolyteConcentration",
+      "ElectrolyteType"
+    ],
+    "Instrument": [
+      "ElectrochemicalWorkstation"
+    ],
+    "Data": [
+      "ExperimentDataset"
+    ]
+  },
+  "relationships": [
+    [
+      "ElectrochemicalImpedanceSpectroscopy",
+      "usesInstrument",
+      "ElectrochemicalWorkstation"
+    ],
+    [
+      "ElectrochemicalImpedanceSpectroscopy",
+      "hasParameter",
+      "FrequencyRange"
+    ],
+    [
+      "ElectrochemicalImpedanceSpectroscopy",
+      "hasParameter",
+      "ACAmplitude"
+    ],
+    [
+      "ElectrochemicalImpedanceSpectroscopy",
+      "hasParameter",
+      "BiasPotential"
+    ],
+    [
+      "ElectrochemicalImpedanceSpectroscopy",
+      "hasParameter",
+      "ReferenceScale"
+    ],
+    [
+      "ElectrochemicalImpedanceSpectroscopy",
+      "hasParameter",
+      "Temperature"
+    ],
+    [
+      "ElectrochemicalImpedanceSpectroscopy",
+      "hasParameter",
+      "ElectrolyteConcentration"
+    ],
+    [
+      "ElectrochemicalImpedanceSpectroscopy",
+      "hasParameter",
+      "ElectrolyteType"
+    ],
+    [
+      "ElectrochemicalImpedanceSpectroscopy",
+      "measures",
+      "HighFrequencyResistance"
+    ],
+    [
+      "ElectrochemicalImpedanceSpectroscopy",
+      "hasOutputData",
+      "ExperimentDataset"
+    ]
+  ],
+  "curated_values": {
+    "HighFrequencyResistance": {
+      "unitHuman": "ohm",
+      "quantityKind": "Resistance"
+    },
+    "FrequencyRange": {
+      "unitHuman": "Hz",
+      "quantityKind": "Frequency"
+    },
+    "ACAmplitude": {
+      "unitHuman": "mV",
+      "quantityKind": "ElectricPotential"
+    },
+    "BiasPotential": {
+      "unitHuman": "mV",
+      "quantityKind": "ElectricPotential",
+      "referenceScale": "RHE"
+    },
+    "ReferenceScale": {
+      "referenceScale": "RHE"
+    },
+    "Temperature": {
+      "unitHuman": "degC",
+      "quantityKind": "ThermodynamicTemperature"
+    },
+    "ElectrolyteConcentration": {
+      "unitHuman": "M",
+      "quantityKind": "AmountOfSubstanceConcentration"
+    }
+  },
+  "units_map": {
+    "ohm": "OHM",
+    "Hz": "HZ",
+    "kHz": "KiloHZ",
+    "mV": "MilliV",
+    "degC": "DEG_C",
+    "Â°C": "DEG_C",
+    "°C": "DEG_C",
+    "M": "MOL-PER-L"
+  },
+  "shapes_files": []
+}

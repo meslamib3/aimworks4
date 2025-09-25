@@ -1,0 +1,24 @@
+{
+  "id": "METR_ECSA",
+  "label": "Electrochemically Active Surface Area (ECSA)",
+  "profile": "Metric",
+  "adds": {
+    "Property": [
+      "ElectrochemicallyActiveSurfaceArea"
+    ],
+    "Parameter": []
+  },
+  "relationships": [],
+  "curated_values": {
+    "ElectrochemicallyActiveSurfaceArea": {
+      "unitHuman": "m2/g",
+      "quantityKind": "AreaPerMass",
+      "normalizationBasis": "CatalystMass"
+    }
+  },
+  "units_map": {
+    "m2/g": "M2-PER-GM",
+    "cm2": "CentiM2"
+  },
+  "shapes_files": []
+}

@@ -1,0 +1,125 @@
+{
+  "id": "MEAS_ECSA_CO_Stripping",
+  "label": "ECSA by CO-stripping",
+  "profile": "Electrochemistry",
+  "keywords": [
+    "ECSA",
+    "CO-stripping"
+  ],
+  "adds": {
+    "Measurement": [
+      "COStrippingVoltammetry"
+    ],
+    "Property": [
+      "ElectrochemicallyActiveSurfaceArea"
+    ],
+    "Parameter": [
+      "COAdsorptionTime",
+      "ScanRate",
+      "PotentialWindow",
+      "ReferenceScale",
+      "ElectrolyteConcentration",
+      "ElectrolyteType",
+      "Temperature"
+    ],
+    "Instrument": [
+      "ElectrochemicalWorkstation"
+    ],
+    "Data": [
+      "ExperimentDataset"
+    ]
+  },
+  "relationships": [
+    [
+      "COStrippingVoltammetry",
+      "usesInstrument",
+      "ElectrochemicalWorkstation"
+    ],
+    [
+      "COStrippingVoltammetry",
+      "hasParameter",
+      "COAdsorptionTime"
+    ],
+    [
+      "COStrippingVoltammetry",
+      "hasParameter",
+      "ScanRate"
+    ],
+    [
+      "COStrippingVoltammetry",
+      "hasParameter",
+      "PotentialWindow"
+    ],
+    [
+      "COStrippingVoltammetry",
+      "hasParameter",
+      "ReferenceScale"
+    ],
+    [
+      "COStrippingVoltammetry",
+      "hasParameter",
+      "ElectrolyteConcentration"
+    ],
+    [
+      "COStrippingVoltammetry",
+      "hasParameter",
+      "ElectrolyteType"
+    ],
+    [
+      "COStrippingVoltammetry",
+      "hasParameter",
+      "Temperature"
+    ],
+    [
+      "COStrippingVoltammetry",
+      "measures",
+      "ElectrochemicallyActiveSurfaceArea"
+    ],
+    [
+      "COStrippingVoltammetry",
+      "hasOutputData",
+      "ExperimentDataset"
+    ]
+  ],
+  "curated_values": {
+    "COAdsorptionTime": {
+      "unitHuman": "min",
+      "quantityKind": "Time"
+    },
+    "ScanRate": {
+      "unitHuman": "mV/s",
+      "quantityKind": "AngularVelocity"
+    },
+    "PotentialWindow": {
+      "unitHuman": "V",
+      "quantityKind": "ElectricPotential"
+    },
+    "ReferenceScale": {
+      "referenceScale": "RHE"
+    },
+    "ElectrolyteConcentration": {
+      "unitHuman": "M",
+      "quantityKind": "AmountOfSubstanceConcentration"
+    },
+    "Temperature": {
+      "unitHuman": "degC",
+      "quantityKind": "ThermodynamicTemperature"
+    },
+    "ElectrochemicallyActiveSurfaceArea": {
+      "unitHuman": "m2/g",
+      "quantityKind": "AreaPerMass",
+      "normalizationBasis": "CatalystMass"
+    }
+  },
+  "units_map": {
+    "min": "MIN",
+    "mV/s": "MilliV-PER-SEC",
+    "V": "V",
+    "M": "MOL-PER-L",
+    "degC": "DEG_C",
+    "Â°C": "DEG_C",
+    "°C": "DEG_C",
+    "m2/g": "M2-PER-GM"
+  },
+  "shapes_files": []
+}

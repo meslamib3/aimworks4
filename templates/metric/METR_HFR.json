@@ -1,0 +1,22 @@
+{
+  "id": "METR_HFR",
+  "label": "High-Frequency Resistance (HFR)",
+  "profile": "Metric",
+  "adds": {
+    "Property": [
+      "HighFrequencyResistance"
+    ],
+    "Parameter": []
+  },
+  "relationships": [],
+  "curated_values": {
+    "HighFrequencyResistance": {
+      "unitHuman": "ohm",
+      "quantityKind": "Resistance"
+    }
+  },
+  "units_map": {
+    "ohm": "OHM"
+  },
+  "shapes_files": []
+}
